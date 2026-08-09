@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>奥克兰二手家具 · 小红书 8月在售清单</title>
+<meta name="robots" content="noindex">
+<title>奥克兰二手家具 · 小红书在售清单</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#faf9f7;--ink:#1c1917;--mut:#78716c;--line:#e7e5e4;--card:#fff;
@@ -9,43 +10,40 @@
 body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
 background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1280px;margin:0 auto;padding:0 20px 80px}
-header{padding:56px 0 28px;border-bottom:2px solid var(--ink)}
+header{padding:52px 0 26px;border-bottom:2px solid var(--ink)}
 h1{font-size:34px;letter-spacing:-.5px;line-height:1.25}
 .sub{color:var(--mut);margin-top:10px;font-size:15px}
 .stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 16px}
 .stat b{display:block;font-size:22px;line-height:1.2}
 .stat span{font-size:12px;color:var(--mut)}
+.stat.hot b{color:var(--acc)}
 section{margin-top:44px}
 h2{font-size:21px;margin-bottom:6px;display:flex;align-items:center;gap:9px}
 h2::before{content:"";width:4px;height:20px;background:var(--acc);border-radius:2px}
 .lede{color:var(--mut);font-size:14.5px;margin-bottom:18px;max-width:76ch}
-
-.alert{background:#fffbeb;border:1px solid #fcd34d;border-left:4px solid #d97706;border-radius:10px;padding:18px 20px;margin-top:22px}
+.alert{background:#fffbeb;border:1px solid #fcd34d;border-left:4px solid #d97706;border-radius:10px;padding:18px 20px}
 .alert h3{font-size:16px;margin-bottom:8px}
-.alert ul{margin-left:19px;font-size:14.5px} .alert li{margin:5px 0}
-
-.route{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px}
-.leg{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
-.leg h3{font-size:15px;margin-bottom:4px}
-.leg .day{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--acc);font-weight:700}
-.leg ol{margin:9px 0 0 17px;font-size:13.5px;color:#44403c} .leg li{margin:5px 0}
-
+.alert ul{margin-left:19px;font-size:14.5px} .alert li{margin:6px 0}
+.route{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.leg{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px 17px}
+.leg .day{font-size:11px;letter-spacing:.09em;color:var(--acc);font-weight:700;margin-bottom:7px}
+.leg ol{margin:0 0 0 17px;font-size:13px;color:#44403c} .leg li{margin:5px 0}
+.leg .sm{color:var(--mut);font-size:11.5px}
 .bar{position:sticky;top:0;z-index:20;background:rgba(250,249,247,.94);backdrop-filter:blur(8px);
-padding:14px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+padding:13px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:7px;align-items:center}
 .bar button{font:inherit;font-size:13px;padding:6px 13px;border:1px solid var(--line);background:#fff;
 border-radius:99px;cursor:pointer;color:#44403c;transition:.12s}
 .bar button:hover{border-color:#a8a29e}
 .bar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
 .bar .sep{width:1px;height:20px;background:var(--line);margin:0 5px}
 .count{margin-left:auto;font-size:13px;color:var(--mut)}
-
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(370px,1fr));gap:20px;margin-top:22px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
 display:flex;flex-direction:column;transition:.15s}
 .card:hover{box-shadow:0 8px 26px rgba(0,0,0,.09);transform:translateY(-2px)}
 .card.s3{border-color:#86efac;box-shadow:inset 3px 0 0 var(--g)}
-.card.s0{opacity:.72}
+.card.s0,.card.dim{opacity:.68}
 .shots{display:flex;gap:2px;background:#f5f5f4;position:relative;aspect-ratio:16/10}
 .shots img{flex:1;width:100%;height:100%;object-fit:cover;min-width:0}
 .dead-note{display:none;position:absolute;inset:0;align-items:center;justify-content:center;
@@ -53,9 +51,10 @@ flex-direction:column;color:var(--mut);font-size:13px;text-align:center;backgrou
 .dead-note span{font-size:11px}
 .shots.dead img{display:none} .shots.dead .dead-note{display:flex}
 .body{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
-.toprow{display:flex;align-items:center;gap:8px;margin-bottom:7px;flex-wrap:wrap}
+.toprow{display:flex;align-items:center;gap:7px;margin-bottom:7px;flex-wrap:wrap}
 .cat{font-size:11.5px;color:var(--mut);background:#f5f5f4;padding:2px 9px;border-radius:99px}
 .tag{font-size:11.5px;background:#fef3c7;color:#92400e;padding:2px 9px;border-radius:99px;font-weight:600}
+.tag.new{background:#dcfce7;color:#166534} .tag.gone{background:#e7e5e4;color:#57534e}
 .stars{margin-left:auto;color:var(--gold);font-size:14px;letter-spacing:1px}
 .card h3{font-size:16.5px;line-height:1.4;margin-bottom:7px}
 .price{font-size:19px;font-weight:700;color:var(--acc);margin-bottom:11px}
@@ -64,149 +63,111 @@ padding:11px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--li
 .meta div{display:flex;gap:6px}
 .meta dt{color:var(--mut);flex-shrink:0} .meta dd{color:#292524}
 .pc{margin-top:12px;display:grid;gap:9px}
-.pc h4{font-size:11.5px;letter-spacing:.06em;margin-bottom:3px}
+.pc h4{font-size:11.5px;letter-spacing:.06em;margin-bottom:3px;margin-left:12px}
 .pro h4{color:var(--g)} .con h4{color:var(--r)}
 .pc ul{margin-left:16px;font-size:13px;color:#44403c} .pc li{margin:2px 0}
 .pro{background:var(--gbg);border-radius:8px;padding:9px 11px 9px 4px}
 .con{background:var(--rbg);border-radius:8px;padding:9px 11px 9px 4px}
-.pro h4,.con h4{margin-left:12px}
 .offer{margin-top:12px;font-size:13.5px;background:#f5f5f4;border-radius:8px;padding:10px 12px}
 .offer b{display:block;font-size:11.5px;color:var(--mut);letter-spacing:.06em;margin-bottom:2px}
 .go{margin-top:13px;display:block;text-align:center;padding:9px;background:var(--ink);color:#fff;
 text-decoration:none;border-radius:8px;font-size:13.5px;font-weight:600}
 .go:hover{background:#ff2442}
-
 .tpl{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:13px}
 .tpl h3{font-size:15px;margin-bottom:9px;display:flex;align-items:center;gap:9px}
 .tpl pre{white-space:pre-wrap;font-family:inherit;font-size:13.5px;color:#292524;
 background:#fafaf9;border-radius:8px;padding:13px 15px;border:1px solid var(--line)}
 .copy{margin-left:auto;font:inherit;font-size:12px;padding:4px 12px;border:1px solid var(--line);
 background:#fff;border-radius:99px;cursor:pointer}
-.copy:hover{border-color:var(--ink)}
 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
 .box{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px}
 .box h3{font-size:15px;margin-bottom:10px}
 .box ul{margin-left:18px;font-size:14px;color:#44403c} .box li{margin:7px 0}
-.box li b{color:var(--ink)}
 .budget{width:100%;border-collapse:collapse;font-size:14px;background:#fff;
 border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.budget th{background:#f5f5f4;text-align:left;padding:11px 14px;font-size:12.5px;
-letter-spacing:.05em;color:var(--mut)}
+.budget th{background:#f5f5f4;text-align:left;padding:11px 14px;font-size:12.5px;color:var(--mut)}
 .budget td{padding:11px 14px;border-top:1px solid var(--line)}
 .budget tr:last-child td{font-weight:700;background:#fafaf9}
 .budget td:nth-child(2){white-space:nowrap;color:var(--acc);font-weight:600}
+.arch summary{cursor:pointer;font-size:15px;font-weight:600;padding:13px 17px;background:#fff;
+border:1px solid var(--line);border-radius:12px}
+.arch[open] summary{border-radius:12px 12px 0 0;border-bottom:none}
 footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
 footer p{margin:5px 0}
 @media(max-width:640px){h1{font-size:26px}.grid{grid-template-columns:1fr}.wrap{padding:0 14px 60px}}
 @media print{
-  @page{margin:12mm}
-  body{background:#fff}
-  .bar,.copy{display:none!important}
-  .wrap{max-width:none;padding:0}
-  header{padding-top:0}
+  @page{margin:12mm} body{background:#fff}
+  .bar,.copy{display:none!important} .wrap{max-width:none;padding:0} header{padding-top:0}
   .grid{grid-template-columns:1fr 1fr;gap:10px}
-  .card{break-inside:avoid;page-break-inside:avoid;box-shadow:none!important;transform:none!important}
-  .card.s0{opacity:1}
-  .leg,.box,.tpl,.alert,.budget{break-inside:avoid;page-break-inside:avoid}
-  section{break-before:auto}
-  h2{break-after:avoid}
+  .card,.leg,.box,.tpl,.alert,.budget{break-inside:avoid;page-break-inside:avoid;box-shadow:none!important;transform:none!important}
+  .card.s0,.card.dim{opacity:1} h2{break-after:avoid}
   .go{background:#fff!important;color:var(--acc)!important;border:1px solid var(--line)}
-  a[href^="http"]::after{content:""}
 }
 </style></head><body><div class="wrap">
 
 <header>
-  <h1>奥克兰二手家具 · 小红书 8 月在售清单</h1>
-  <p class="sub">抓取于 2026 年 8 月 9 日 · 仅保留 <b>8 月 1 日之后</b>发布的帖子 · 已剔除求购帖、攻略帖、已售帖、DIY 帖及非奥克兰地区</p>
+  <h1>奥克兰二手家具 · 小红书在售清单</h1>
+  <p class="sub">最后更新 2026-08-10 · 首页只放最近 14 天内发布的帖子 · 已剔除求购帖、攻略帖、已售帖、DIY 帖及非奥克兰地区</p>
   <div class="stats">
-    <div class="stat"><b>53</b><span>有效在售</span></div>
-    <div class="stat"><b>15</b><span>强烈推荐 ★★★</span></div>
-    <div class="stat"><b>23</b><span>值得一问 ★★</span></div>
-    <div class="stat"><b>3</b><span>免费自取</span></div>
-    <div class="stat"><b>3</b><span>卖家可送货</span></div>
+    <div class="stat"><b>90</b><span>在售</span></div>
+    <div class="stat hot"><b>22</b><span>今日新增</span></div>
+    <div class="stat"><b>26</b><span>强烈推荐 ★★★</span></div>
+    <div class="stat"><b>41</b><span>值得一问 ★★</span></div>
+    <div class="stat"><b>6</b><span>免费自取</span></div>
+    <div class="stat"><b>6</b><span>卖家可送货</span></div>
   </div>
 </header>
 
 <section>
-  <h2>先看这个：三条限时的</h2>
-  <div class="alert">
-    <h3>⏰ 过了就没了</h3>
-    <ul>
-      <li><b>大升降桌 + 大电视 $200</b> —— 帖子发布于 08-08 且写明「限今天取」。今天就问「还在吗」，还在就直接拿，这是全表升降桌最低价。</li>
-      <li><b>免费件（金属货架 / New Windsor 床架柜子 / Mt Eden 微波炉）</b> —— 本地买家反映有人开货车专门守着捡免费件，看到就发第一条消息，别花时间斟酌措辞。</li>
-      <li><b>Zetland 的 Hisense 洗衣机 + 417L 冰箱</b> —— 成色很好，但要 <b>8 月 20 日之后</b>才能取。如果你们月中就要入住，直接跳过，选 Albany 的 $400 或那台 9 成新还在保修的。</li>
-    </ul>
-  </div>
+  <h2>先看这个</h2>
+  <div class="alert"><h3>⏰ 限时 / 免费，过了就没了</h3><ul><li><b>床架 + 床垫（免费）</b>（免费，西区） —— 免费，但先要照片和尺寸再决定跑不跑这一趟</li><li><b>Queen 棕榈床垫（免费）</b>（免费，北岸 Greenhithe） —— 免费，尽快约 —— 免费 Queen 床垫通常当天就被约走</li><li><b>木质置物架 + 调料抽拉收纳架（免费）</b>（免费，中区） —— 免费，直接约时间，别再谈条件</li><li><b>免费床架 + 床垫 + 柜子</b>（免费，西区 New Windsor） —— 立刻私信，只拿床架和柜子</li><li><b>免费微波炉（松下，有锈斑）</b>（免费，中区 Mt Eden） —— 顺路就拿</li><li><b>金属货架（免费）</b>（免费，奥克兰） —— 看到就立刻私信，别编辑措辞</li></ul>
+  <p style="margin-top:9px;font-size:13.5px;color:#78716c">免费帖手慢无 —— 本地买家反映有人开货车专门守着捡。看到就发第一条消息，别花时间斟酌措辞。</p></div>
 </section>
 
 <section>
-  <h2>路线：三天扫完</h2>
-  <p class="lede">大件的真正成本不是货价，是跑腿。把同一片区的卖家串成一天，比一件件跑省下的钱多得多。你们有 van，按下面这个顺序走。</p>
-  <div class="route">
-    <div class="leg"><div class="day">Day 1 · 北岸</div><h3>Albany → Pinehill → Schnapper Rock → Browns Bay</h3>
-      <ol>
-        <li><b>Albany 清仓</b>（洗衣机 $400 / 烘干机 $400 / 餐桌6椅 $600 / 升降桌 $150 / Queen 床 $200）—— 整单开 $1500</li>
-        <li><b>Albany 全新家具合集</b>（95新，床架床垫斗柜升降桌电脑椅）—— 同区，顺路第二家</li>
-        <li><b>Pinehill</b>：海尔冰箱 $120、Bosch 洗衣机 $499（可拿来和 Albany 那台比价压价）</li>
-        <li><b>Schnapper Rock</b>：法式实木餐桌 + 6 椅 $310（可小刀）</li>
-        <li><b>Browns Bay</b>：实木 Queen 床架 $50</li>
-        <li><b>Takapuna</b>：三菱冰箱 420L $240 · <b>Windsor Park</b>：LG 冰箱 $220（这家可以送货，能省则省）</li>
-      </ol></div>
-    <div class="leg"><div class="day">Day 2 · 中区 + 西区</div><h3>Mt Eden → Newmarket → Mt Albert → New Windsor → Westgate</h3>
-      <ol>
-        <li><b>Mt Eden</b>：整套真皮沙发 $650（3人位 + 2 单人 + 单座）、免费微波炉</li>
-        <li><b>Newmarket</b>：Queen 床架 + 床垫 $120</li>
-        <li><b>Mt Albert</b>：皮质餐椅 $60（先问有几把）</li>
-        <li><b>New Windsor</b>：免费床架 + 柜子（床垫别要）</li>
-        <li><b>中区</b>：实木餐桌 117×77（四腿可拆，轿车就能装）</li>
-        <li><b>Westgate</b>：双人沙发 $60 —— 全表沙发性价比第一</li>
-      </ol></div>
-    <div class="leg"><div class="day">Day 3 · 东区 / City（按需）</div><h3>Howick → Flatbush → Glendowie → City</h3>
-      <ol>
-        <li><b>东区</b>：9 成新 8kg 洗衣机（还在保修期，全表成色最好）—— 这一单值得专程</li>
-        <li><b>Flatbush</b>：儿童书架 $25 / 茶几 $40 / 大理石边几 $60</li>
-        <li><b>Glendowie</b>：Harvey Norman 沙发（原价 $2999，先问价）</li>
-        <li><b>City</b>：出家具帖（价格标在图上，City 范围可帮忙送）、五抽柜、桌上型升降台</li>
-      </ol></div>
-  </div>
+  <h2>按片区跑</h2>
+  <p class="lede">大件的真正成本不是货价，是跑腿。把同一片区的卖家串成一天，比一件件跑省下的钱多得多。下面按区列出了值得去的（★★ 及以上）。</p>
+  <div class="route"><div class="leg"><div class="day">北岸 · 19 条</div><ol><li><b>北岸 Albany 全新家具合集（95新）</b> · 面议<span class="sm"> 北岸 Albany</span></li><li><b>北岸 Albany 清仓 · 全品类明码标价</b> · 洗衣机$400 · 烘干机$400 · 餐桌6椅$600 · 升降桌$150 · Queen床$200<span class="sm"> 北岸 Albany</span></li><li><b>Harvey Norman 羽绒沙发 $680 + Serene S</b> · 沙发 $680 · 床垫 $180<span class="sm"> 北岸</span></li><li><b>L 型沙发 2.6m×1.0m + 方凳</b> · $150<span class="sm"> 北岸</span></li><li><b>Queen 棕榈床垫（免费）</b> · 免费<span class="sm"> 北岸 Greenhithe</span></li><li><b>实木 Queen 床架（已拆好，可直接装车）</b> · $50<span class="sm"> 北岸 Browns Bay</span></li><li><b>海尔冰箱 213L（上冷冻下冷藏）</b> · $120<span class="sm"> 北岸 Pinehill</span></li><li><b>LG 变频冰箱 GN-315FW（160×61×72）</b> · $220<span class="sm"> 北岸 Windsor Park</span></li></ol></div><div class="leg"><div class="day">中区 · 19 条</div><ol><li><b>中区清仓：Queen 皮床 $220 / 冰箱 $450 / 洗衣机</b> · 皮床 $220 · 冰箱 $450 · 洗衣机 $220 · 微波炉 $50<span class="sm"> 中区</span></li><li><b>整套真皮沙发：3人位 + 2张单人 + 单座</b> · $650 整套<span class="sm"> 中区 Mt Eden</span></li><li><b>Queen 实木床架 + 席梦思床垫（送双抽床头柜）</b> · $250<span class="sm"> 中区 Mt Eden</span></li><li><b>实木餐桌 117×77（四腿可拆，轿车能装）</b> · 面议<span class="sm"> 奥克兰中区</span></li><li><b>吸尘器 2400W Bagless（Kmart 购入）</b> · $45<span class="sm"> 奥克兰中区</span></li><li><b>离纽清仓「给钱就卖」（City 自取）</b> · 面议（卖家写：给钱就卖）<span class="sm"> 中区 City</span></li><li><b>全新 / 近新好物清仓（价格尺寸都在图上）</b> · 见图标价<span class="sm"> 中区 / 奥大</span></li><li><b>Queen 床架 + 床垫（含乳胶 mattress top）</b> · $120 全套<span class="sm"> 中区 Newmarket</span></li></ol></div><div class="leg"><div class="day">City · 4 条</div><ol><li><b>奥克兰 City 出家具 · 价格直接标在图上</b> · 面议（图上有价）<span class="sm"> 奥克兰 City</span></li><li><b>五抽柜 102×82</b> · 面议<span class="sm"> 奥克兰 City</span></li><li><b>升降台（桌上型，可坐可站）</b> · 面议<span class="sm"> 奥大 City 校区工程楼</span></li><li><b>吸尘器 $10 + 净水器 $18 + 阻门器 $15 等小件</b> · $10 起<span class="sm"> 奥克兰 City</span></li></ol></div><div class="leg"><div class="day">西区 · 6 条</div><ol><li><b>双人沙发（买了不到一年）</b> · $60<span class="sm"> 西区 Westgate</span></li><li><b>床架 + 床垫（免费）</b> · 免费<span class="sm"> 西区</span></li><li><b>LG 微波炉（Harvey Norman 购入，很新）</b> · $80<span class="sm"> 西区 Westgate</span></li><li><b>实木书架4个 + 实木电视柜 + 索尼43寸电视</b> · 面议<span class="sm"> 西区 半岛</span></li><li><b>全新沙发 + 钢化玻璃餐桌4椅（Staging 样板家具）</b> · 面议<span class="sm"> 西区</span></li><li><b>50L 大功率除湿机（用过两个冬天）</b> · 面议<span class="sm"> 西区 Hobsonville</span></li></ol></div><div class="leg"><div class="day">东区 · 8 条</div><ol><li><b>8kg 上翻盖洗衣机（去年 6 月买，还在保修期）</b> · 面议<span class="sm"> 东区</span></li><li><b>DeLonghi 暖气（9成新，制热快）</b> · $40<span class="sm"> 东南区 Flat Bush</span></li><li><b>德龙陶瓷塔式取暖器（遥控 / ECO / 摇头 / 定时）</b> · 面议<span class="sm"> 东区 Mission Bay</span></li><li><b>儿童HDPE书架 $25 · 茶几 $40 · 大理石边几 $60</b> · $25 / $40 / $60<span class="sm"> 东区 Flatbush</span></li><li><b>沙发（左侧两个坐垫弹簧有问题）</b> · $50<span class="sm"> 东区 Howick</span></li><li><b>Harvey Norman 沙发（原价 $2999）</b> · 面议<span class="sm"> 东区 Glendowie</span></li><li><b>格力大功率油汀电暖器（带遥控、定时、调温）</b> · 面议<span class="sm"> 奥克兰东区</span></li><li><b>全新手持蒸汽挂烫机</b> · $5<span class="sm"> 东区 Botany</span></li></ol></div><div class="leg"><div class="day">南区 · 1 条</div><ol><li><b>圆形玻璃餐桌 + 3 张灰色软垫餐椅</b> · 桌$200 / 椅$100 / 整套$280<span class="sm"> 奥克兰南区</span></li></ol></div><div class="leg"><div class="day">远郊 · 1 条</div><ol><li><b>全实木榉木餐桌（150→190 可加长）+ 6 榉木餐椅</b> · $600 不议价<span class="sm"> Orewa</span></li></ol></div><div class="leg"><div class="day">其他 · 9 条</div><ol><li><b>99 新洗衣机（原价 $699）</b> · $280<span class="sm"> 奥克兰</span></li><li><b>金属货架（免费）</b> · 免费<span class="sm"> 奥克兰</span></li><li><b>L 型沙发 3.2m（贵妃位 1.75m）</b> · 面议<span class="sm"> 奥克兰（未写具体区）</span></li><li><b>布艺沙发 3m×1m×0.7m（可拆卸）</b> · 面议<span class="sm"> 奥克兰</span></li><li><b>Fisher &amp; Paykel 冰箱</b> · $150<span class="sm"> 奥克兰</span></li><li><b>桃花心木古董餐桌 + 6 椅（英国摄政风）</b> · 面议<span class="sm"> 奥克兰同城</span></li><li><b>大升降桌 + 大电视</b> · $200 一套<span class="sm"> 奥克兰</span></li><li><b>除湿机（功能一切正常）</b> · $20<span class="sm"> 奥克兰</span></li></ol></div></div>
 </section>
 
 <section>
-  <h2>全部清单 · 53 条</h2>
-  <p class="lede">按推荐度排序。★★★ = 价格明显低于同类且信息可信，值得优先联系；★★ = 值得一问；★ = 观望；☆ = 价格偏高或风险大，建议跳过。判断依据是<b>价格 vs 同类二手行情 + 描述可信度 + 取货难度</b>，不是对商品本身质量的评价。</p>
+  <h2>全部在售 · 90 条</h2>
+  <p class="lede">按推荐度排序。★★★ = 价格明显低于同类且信息可信；★★ = 值得一问；★ = 观望；☆ = 价格偏高或风险大。判断依据是<b>价格 vs 同类二手行情 + 描述可信度 + 取货难度</b>，不是对商品本身质量的评价。</p>
   <div class="bar">
-    <button data-f="all" class="on">全部</button><button data-f="cat:一站式">🏠 一站式</button><button data-f="cat:沙发">🛋️ 沙发</button><button data-f="cat:床架/床垫">🛏️ 床架/床垫</button><button data-f="cat:洗衣机/冰箱">🧺 洗衣机/冰箱</button><button data-f="cat:餐桌椅">🍽️ 餐桌椅</button><button data-f="cat:办公桌/工学椅">💻 办公桌/工学椅</button>
+    <button data-f="all" class="on">全部</button><button data-f="cat:一站式">🏠 一站式</button><button data-f="cat:沙发">🛋️ 沙发</button><button data-f="cat:床架/床垫">🛏️ 床架/床垫</button><button data-f="cat:洗衣机/冰箱">🧺 洗衣机/冰箱</button><button data-f="cat:餐桌椅">🍽️ 餐桌椅</button><button data-f="cat:办公桌/工学椅">💻 办公桌/工学椅</button><button data-f="cat:保暖除湿">🌡️ 保暖除湿</button><button data-f="cat:清洁晾晒">🧹 清洁晾晒</button><button data-f="cat:厨房小电">🍳 厨房小电</button><button data-f="cat:客厅收纳">📺 客厅收纳</button>
+    <span class="sep"></span><button data-f="reg:北岸">北岸</button><button data-f="reg:中区">中区</button><button data-f="reg:City">City</button><button data-f="reg:西区">西区</button><button data-f="reg:东区">东区</button><button data-f="reg:南区">南区</button><button data-f="reg:远郊">远郊</button>
     <span class="sep"></span>
     <button data-f="star:3">只看 ★★★</button>
+    <button data-f="new">今日新增</button>
     <button data-f="free">免费 / 可送货</button>
-    <span class="sep"></span>
     <button data-f="sort">按价格排序</button>
     <span class="count" id="cnt"></span>
   </div>
   <div class="grid" id="grid">
-<article class="card s3" data-cat="一站式" data-star="3" data-price="200">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323j8j54kia00401e68q7lriqigpo1e8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323j8j54kia0g401e68q7lriq1nljn30?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s3" data-cat="一站式"
+  data-star="3" data-price="220" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323l852a5766g5n5pgv65scbfjpoucog?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323l852a576505n5pgv65scbfbam5cb0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🔥 首选</span>
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag new">✨ 今日新增</span><span class="tag">🔥 首选</span>
       <span class="stars" title="强烈推荐">★★★</span></div>
-    <h3>北岸 Albany 清仓 · 全品类明码标价</h3>
-    <div class="price">洗衣机$400 · 烘干机$400 · 餐桌6椅$600 · 升降桌$150 · Queen床$200</div>
+    <h3>中区清仓：Queen 皮床 $220 / 冰箱 $450 / 洗衣机 $220 / 微波炉 $50</h3>
+    <div class="price">皮床 $220 · 冰箱 $450 · 洗衣机 $220 · 微波炉 $50</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>洗衣机/烘干机均「两年新」</dd></div>
-      <div><dt>区域</dt><dd>北岸 Albany</dd></div>
+      <div><dt>成色</dt><dd>冰箱不到 4 年，洗衣机约 2 年；皮床有小瑕疵但整体很好</dd></div>
+      <div><dt>区域</dt><dd>中区</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 青空飞鸟</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 放飞自我的JC</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>全表最值得先联系的一家：床、沙发、冰箱、洗衣机、烘干机、餐桌椅、升降桌全都有</li><li>每一件都写了价格，不用来回问</li><li>一个地址一趟车拉走，省下多趟货运费</li><li>整单打包时砍价空间最大</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>真皮沙发 $2000、双开门冰箱 $1300 明显偏贵，别整单照单全收</li><li>Albany 在北岸，市区过去约 30 分钟</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>洗衣机两年左右只要 $220 —— 同一天 Oteha 那家「两年新」的三星要 $420，这里便宜了一半</li><li>Queen 皮床含床架、床垫和 mattress top 一共 $220，是本表所有 Queen 套装里最低的</li><li>冰箱写明不到 4 年 $450，年限清楚，不是那种「用了很久」的模糊说法</li><li>四件全是刚落地的刚需，一趟车中区取完，省下多趟货运费</li><li>卖家写「其余小东西可以送」，打包成交还能白捡一批</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>皮床卖家自己写了「有一些小瑕疵」，去之前务必看清是表面划痕还是皮面开裂</li><li>冰箱没写品牌和容量，$450 划不划算得当场看铭牌确认</li><li>只说「中区取货」，没写具体 suburb，约的时候先问清地址</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>挑：洗衣机$400 + 烘干机$400 + 餐桌6椅$600 + 升降桌$150 + Queen床$200 → 整单开 $1500 试</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8Albany%E5%8D%96%E5%AE%B6%E5%85%B7" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>四件打包开 $850（皮床 $180 + 冰箱 $400 + 洗衣机 $190 + 微波炉 $40），整单走比拆开卖省事，成交概率高</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%BA%E9%97%B2%E7%BD%AE%20%E7%9A%AE%E5%BA%8A%E5%86%B0%E7%AE%B1%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E5%BE%AE%E6%B3%A2%E7%82%89%20%E4%B8%AD%E5%8C%BA%E5%8F%96%E8%B4%A7" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="一站式" data-star="3" data-price="0">
+<article class="card s3" data-cat="一站式"
+  data-star="3" data-price="0" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323k47g26na005njooitg80t2v0b69c0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323k47g26na0g5njooitg80t212pa3m8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🔥 首选</span>
@@ -217,7 +178,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>全部 95 新，基本无使用痕迹</dd></div>
       <div><dt>区域</dt><dd>北岸 Albany</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 每天都好困</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 每天都好困</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>床架、床垫、床上桌、斗柜、小推车、升降桌、电脑椅 —— 正好覆盖你们缺的卧室 + 书房</li><li>全部 95 新，基本无使用痕迹，等于半价买新品</li><li>和上面那家同在 Albany，可以一天扫两家</li></ul></div>
@@ -227,8 +188,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E5%9F%BA%E6%9C%AC%E5%85%A8%E6%96%B0%E5%AE%B6%E5%85%B7%20albany%2095%E6%96%B0" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="一站式" data-star="3" data-price="0">
+<article class="card s3" data-cat="一站式"
+  data-star="3" data-price="0" data-region="City">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kk983pnk1g49niliuuka1oufbsv88?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kk983pnk2049niliuuka1ott1s5q0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🚚 可送货</span>
@@ -239,7 +200,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>奥克兰 City</dd></div>
       <div><dt>取货</dt><dd>🚚 City 范围可帮忙送</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 💥Bohan-Fan💥</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 💥Bohan-Fan💥</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>价格直接印在图片上，省掉一轮问价的来回</li><li>City 范围内可以帮忙送货 —— 全表少数几个愿意送的</li><li>位置在市中心，跑一趟成本最低</li></ul></div>
@@ -249,8 +210,52 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0city%E5%87%BA%E5%AE%B6%E5%85%B7%20%E4%BB%B7%E6%A0%BC%E5%9C%A8%E5%9B%BE%E7%89%87%E4%B8%8A" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="沙发" data-star="3" data-price="150">
+<article class="card s3" data-cat="一站式"
+  data-star="3" data-price="200" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323j8j54kia00401e68q7lriqigpo1e8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323j8j54kia0g401e68q7lriq1nljn30?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🔥 首选</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>北岸 Albany 清仓 · 全品类明码标价</h3>
+    <div class="price">洗衣机$400 · 烘干机$400 · 餐桌6椅$600 · 升降桌$150 · Queen床$200</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>洗衣机/烘干机均「两年新」</dd></div>
+      <div><dt>区域</dt><dd>北岸 Albany</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 青空飞鸟</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>全表最值得先联系的一家：床、沙发、冰箱、洗衣机、烘干机、餐桌椅、升降桌全都有</li><li>每一件都写了价格，不用来回问</li><li>一个地址一趟车拉走，省下多趟货运费</li><li>整单打包时砍价空间最大</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>真皮沙发 $2000、双开门冰箱 $1300 明显偏贵，别整单照单全收</li><li>Albany 在北岸，市区过去约 30 分钟</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>挑：洗衣机$400 + 烘干机$400 + 餐桌6椅$600 + 升降桌$150 + Queen床$200 → 整单开 $1500 试</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8Albany%E5%8D%96%E5%AE%B6%E5%85%B7" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="沙发"
+  data-star="3" data-price="680" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323l58bmn0a004bnodipviq3gur4n4c8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/1040g008323l58bmn0a0g4bnodipviq3gacqu4l8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛋️ 沙发</span><span class="tag new">✨ 今日新增</span><span class="tag">🔥 首选</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>Harvey Norman 羽绒沙发 $680 + Serene Sleep Queen 席梦思 $180</h3>
+    <div class="price">沙发 $680 · 床垫 $180</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>沙发套可拆可洗，正常使用；床垫为 Serene Sleep</dd></div>
+      <div><dt>区域</dt><dd>北岸</dd></div>
+      <div><dt>取货</dt><dd>自提（8/27 或 8/28 才能取）</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 🐻炸鸡俱乐部🐻</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>Harvey Norman 原价 $2870 的羽绒沙发卖 $680，不到原价四分之一，是这批折价最狠的一件</li><li>沙发套可拆可洗，白色脏了能漂白，长期使用成本低于不可拆洗的皮沙发</li><li>2.1m 长、深 95cm，一米九的人能整个躺下，等于顺带多一张 single bed</li><li>Serene Sleep Queen 席梦思原价 $999 卖 $180，床垫单拿也划算</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>只能 8 月 27 或 28 号取，中间近三周你得先有地方坐和睡，急着入住的不合适</li><li>羽绒芯坐久了会塌，接手后要定期拍松回弹，介意的别买</li><li>卖家是离纽走人，取货就那两天，错过没有第二次机会</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>沙发 + 床垫一起拿开 $760（沙发 $600 + 床垫 $160）—— 整单走对离纽的卖家更省事，比单件砍价更容易成</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E7%A6%BB%E7%BA%BD%20%E5%A5%A5%E5%85%8B%E5%85%B0%20%E6%B2%99%E5%8F%91%20queen%E5%B8%AD%E6%A2%A6%E6%80%9D%20%E7%8C%AB%E7%A0%82%E7%9B%86" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="沙发"
+  data-star="3" data-price="150" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jolclo7c0044tfic1hlb85cvlkvio?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jolclo7c0g44tfic1hlb85fg7m148?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span><span class="tag">💎 捡漏</span>
@@ -261,7 +266,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>北岸</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · YaoYao</dd></div>
+      <div><dt>发布</dt><dd>08/08 · YaoYao</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>2.6 米 L 型带脚凳只要 $150，按座位算单价全表最低</li><li>躺座 1.7m，一个人能整个躺平</li><li>08-08 新帖，还没被抢</li></ul></div>
@@ -271,8 +276,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%E6%B2%99%E5%8F%91%20%E6%B2%99%E5%8F%91%E6%80%BB%E9%95%BF2.6%E7%B1%B3" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="沙发" data-star="3" data-price="60">
+<article class="card s3" data-cat="沙发"
+  data-star="3" data-price="60" data-region="西区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323j91jq4go7g4a6qd42d0phmnainki8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323j94hmi7a7g4a6qd42d0phmoi72cm8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span><span class="tag">💎 捡漏</span>
@@ -283,7 +288,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>近新</dd></div>
       <div><dt>区域</dt><dd>西区 Westgate</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · Ninanana</dd></div>
+      <div><dt>发布</dt><dd>08/07 · Ninanana</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>全表沙发性价比第一：不到一年的近新双人沙发只要 $60，几乎等于白送</li><li>卖家说明了「因为搬家忍痛割爱」，是真闲置不是清库存</li><li>尺寸有图，可先量好门宽</li></ul></div>
@@ -293,8 +298,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%8F%8C%E4%BA%BA%E6%B2%99%E5%8F%91%E9%97%B2%E7%BD%AE%20%E5%A5%A5%E5%85%8B%E5%85%B0%E8%A5%BF%E5%8C%BA%E8%87%AA%E5%8F%96%20Westgate" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="沙发" data-star="3" data-price="650">
+<article class="card s3" data-cat="沙发"
+  data-star="3" data-price="650" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/spectrum/1040g3ug323e6tc9dno005nlfo9h084sf35nqcbg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span>
@@ -305,7 +310,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>中区 Mt Eden</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月04日 · LL</dd></div>
+      <div><dt>发布</dt><dd>08/04 · LL</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>一次配齐整个客厅：三人位 2.1m + 两张单人 + 一个单座</li><li>真皮，同规格新品要 $3000 以上</li><li>平均每个座位约 $160，比单买划算</li><li>Mt Eden 中区，位置好</li></ul></div>
@@ -315,8 +320,74 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%BA%E9%97%B2%E7%BD%AE%E6%95%B4%E5%A5%97%E7%9C%9F%E7%9A%AE%E6%B2%99%E5%8F%91%20650%20Mt%20Eden" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="床架/床垫" data-star="3" data-price="50">
+<article class="card s3" data-cat="床架/床垫"
+  data-star="3" data-price="250" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323lsnnvuni005nu0f8fgbtphr0d9dgo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323lsnnvuni0g5nu0f8fgbtphjhi1b48?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag new">✨ 今日新增</span><span class="tag">🔥 首选</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>Queen 实木床架 + 席梦思床垫（送双抽床头柜）</h3>
+    <div class="price">$250</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>实木框架稳固、无异响；床垫支撑感好，可直接睡</dd></div>
+      <div><dt>区域</dt><dd>中区 Mt Eden</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 錢錢唐唐</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>本表最便宜的 Queen 整套：床架 + 床垫 + 床头柜全包 $250，比同期任何一套都低</li><li>实木框架，卖家明确写了稳固不晃、没有异响 —— 二手床最常见的毛病就是这个</li><li>尺寸写全了 2.12m × 1.65m × 0.47m，去之前就能量好车和房间</li><li>Mt Eden 在中区，市区过去十几分钟，不用为一张床跑北岸</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>床垫是红色经典花纹的旧款席梦思，二手床垫的卫生要自己当场翻面检查</li><li>没写用了几年，只说「买回去直接就能睡」</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$250 已经在低位，开 $220 试一次，卖家不松就原价拿，别为 $30 丢掉</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E8%B6%85%E5%88%92%E7%AE%97Queen%20Size%E5%8D%A7%E5%AE%A4%E5%A4%A7%E5%BA%8A%20%E6%80%A7%E4%BB%B7%E6%AF%94%E6%8B%89%E6%BB%A1" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="床架/床垫"
+  data-star="3" data-price="0" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323kpckfp7k0049mdeinu6im2s7a30n0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag new">✨ 今日新增</span><span class="tag">🆓 免费</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>床架 + 床垫（免费）</h3>
+    <div class="price">免费</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未写，需私信问</dd></div>
+      <div><dt>区域</dt><dd>西区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · siya</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>床架和床垫一起免费送，一次把睡觉问题解决掉，是刚落地最省钱的一种解法</li><li>免费件里少有的成套，不用再单独凑床垫</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>正文完全空白，尺寸、成色、用了几年全都要私信问</li><li>免费床垫务必当场翻面确认有没有霉点、污渍和虫</li><li>西区自提，中区过去要开一段，白跑的成本比免费本身高</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>免费，但先要照片和尺寸再决定跑不跑这一趟</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%20%E5%85%8D%E8%B4%B9%20%E5%BA%8A%E5%9E%AB%E5%BA%8A%E6%9E%B6%20%E8%A5%BF%E5%8C%BA%E8%87%AA%E6%8F%90%20%E9%97%B2%E7%BD%AE" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="床架/床垫"
+  data-star="3" data-price="0" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323kscmni0mb05p3etjpamqghuk8j85g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag new">✨ 今日新增</span><span class="tag">🆓 免费</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>Queen 棕榈床垫（免费）</h3>
+    <div class="price">免费</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>中偏硬，棕榈芯，外套可拆洗</dd></div>
+      <div><dt>区域</dt><dd>北岸 Greenhithe</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Miao</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>免费的 Queen 床垫，而且卖家把硬度（中偏硬）和材质（棕榈）都说清楚了，不用猜</li><li>外套可拆洗，拿回来先洗一遍就能用</li><li>棕榈芯不像弹簧床垫那样容易睡出凹陷，二手接手风险相对小</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>免费二手床垫最大的风险是卫生，带手电当场翻面看霉斑和污渍</li><li>棕榈偏硬，睡惯软床的人会不适应，没法退</li><li>Greenhithe 在北岸，Queen 床垫得 van 或 SUV 才装得下</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>免费，尽快约 —— 免费 Queen 床垫通常当天就被约走</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=Free%E5%85%8D%E8%B4%B9queen%20size%E5%BA%8A%E5%9E%AB%20%E5%8C%97%E5%B2%B8greenhithe" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="床架/床垫"
+  data-star="3" data-price="50" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323akjctq7u804a6b61mjvp2ntmkqq88?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag">💎 捡漏</span>
@@ -327,7 +398,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>结构很稳，中间两根横木有损坏</dd></div>
       <div><dt>区域</dt><dd>北岸 Browns Bay</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月01日 · 土坡坡</dd></div>
+      <div><dt>发布</dt><dd>08/01 · 土坡坡</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>全表最低价的实木 Queen 床架</li><li>已经拆解好，van 开过去直接装走，不用现场折腾</li><li>卖家如实写了瑕疵，还给了解决方案（Bunnings 补两根木头）</li></ul></div>
@@ -337,96 +408,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%7C%E5%8C%97%E5%B2%B8%E8%87%AA%E5%8F%96%E8%B6%85%E4%BD%8E%E4%BB%B7%E5%AE%9E%E6%9C%A8queen%E5%BA%8A%E6%9E%B6" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="洗衣机/冰箱" data-star="3" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323i3autg0aa04a7jqkkfou7gm5rpkqg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323i3autg0aag4a7jqkkfou7g2i5ol40?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">💎 捡漏</span>
-      <span class="stars" title="强烈推荐">★★★</span></div>
-    <h3>8kg 上翻盖洗衣机（去年 6 月买，还在保修期）</h3>
-    <div class="price">面议</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>9 成新，膜都没撕，用过没几次</dd></div>
-      <div><dt>区域</dt><dd>东区</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · A small coconut 💚</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>全表成色最好的洗衣机：买了不到一年，还在保修期内</li><li>卖家说「膜都没撕」「给租房房客用都不怕坏」，用得极少</li><li>节能省水，8kg 容量够两人用</li><li>是因为新家放不下才出，不是坏了才出 —— 这点很关键</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价，需要私信</li><li>上翻盖机型不能嵌进台面下，摆放要留顶部空间</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>问价；9 成新还在保修，$250-320 都算合理</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%90%AC%E5%AE%B6%E5%87%BA%E9%97%B2%E7%BD%AE%EF%BC%8C%E6%B4%97%E8%A1%A3%E6%9C%BA%EF%BC%8C9%E6%88%90%E6%96%B0" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s3" data-cat="洗衣机/冰箱" data-star="3" data-price="280">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323ihs0tf0a4g5qa96outuackfvr9j4o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
-      <span class="stars" title="强烈推荐">★★★</span></div>
-    <h3>99 新洗衣机（原价 $699）</h3>
-    <div class="price">$280</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>99 新</dd></div>
-      <div><dt>区域</dt><dd>奥克兰</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 辻弍 (shí èr)</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>原价 $699 卖 $280，折价合理</li><li>99 新，故障风险低</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写品牌型号和容量，必须问</li><li>没写取货区域，也没写包不包送</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>$250；先问型号、容量、用了多久</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA99%E6%96%B0%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E5%8E%9F%E4%BB%B7699%E7%8E%B0280%E5%87%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s3" data-cat="洗衣机/冰箱" data-star="3" data-price="240">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jn5feo7i005obfj3h0j4codl3h2ko?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">💎 捡漏</span>
-      <span class="stars" title="强烈推荐">★★★</span></div>
-    <h3>三菱冰箱 420L</h3>
-    <div class="price">$240</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>未注明</dd></div>
-      <div><dt>区域</dt><dd>北岸 Takapuna</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月06日 · 园丁</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>420L 大容量 + 三菱品质，$240 是全表冰箱性价比第一</li><li>Takapuna 位置好，北岸主干道边</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子只有一行字，年份和成色全靠问</li><li>420L 很重很高，搬运要两人 + 推车</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>$240 基本就是好价；先确认制冷正常、无异味</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8%20%E4%BA%8C%E6%89%8B%E4%B8%89%E8%8F%B1%E5%86%B0%E7%AE%B1" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s3" data-cat="洗衣机/冰箱" data-star="3" data-price="220">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323idonk60ahg5n6booklqsj05puovf8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">🚚 可送货</span>
-      <span class="stars" title="强烈推荐">★★★</span></div>
-    <h3>LG 变频冰箱 GN-315FW（160×61×72）</h3>
-    <div class="price">$220</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>整机功能正常，干净无异味</dd></div>
-      <div><dt>区域</dt><dd>北岸 Windsor Park</dd></div>
-      <div><dt>取货</dt><dd>🚚 可送货（按距离报价）</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · Lynn</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>变频静音省电、多路风冷不结霜、Bio Silver 抗菌除味 —— 参数写得最清楚的一条</li><li>明说可以送货上门（送到门口，不搬上楼）</li><li>「不收订金，优先最早能取的朋友」—— 卖家很实在</li><li>尺寸标注精确，方便先量厨房位置</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>315L 两人够用，如果之后要囤货会偏小</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>$220 已是好价；重点谈送货，能省一趟车</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BALG%E5%8F%98%E9%A2%91%E5%86%B0%E7%AE%B1GN-315FW" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s3" data-cat="洗衣机/冰箱" data-star="3" data-price="120">
+<article class="card s3" data-cat="洗衣机/冰箱"
+  data-star="3" data-price="120" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323kiqv4qnk604a4amaj1jtp2cslqdig?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
@@ -437,7 +420,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>正常工作</dd></div>
       <div><dt>区域</dt><dd>北岸 Pinehill</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · Momo</dd></div>
+      <div><dt>发布</dt><dd>08/08 · Momo</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>$120 是全表最便宜的正常尺寸冰箱</li><li>上冷冻下冷藏，日常拿菜不用弯腰</li><li>Pinehill 附近还有另外两家在出家具，可以一天扫完</li></ul></div>
@@ -447,30 +430,96 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%B5%B7%E5%B0%94%E5%86%B0%E7%AE%B1%EF%BC%8C213%E5%8D%87%20120" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="餐桌椅" data-star="3" data-price="310">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323cvrctsnu904a0jj1es019jhtmcg4g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s3" data-cat="洗衣机/冰箱"
+  data-star="3" data-price="0" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323i3autg0aa04a7jqkkfou7gm5rpkqg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323i3autg0aag4a7jqkkfou7g2i5ol40?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span><span class="tag">💎 捡漏</span>
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">💎 捡漏</span>
       <span class="stars" title="强烈推荐">★★★</span></div>
-    <h3>法式实木餐桌 + 6 张餐椅（自带灰坐垫）</h3>
-    <div class="price">整套 $310，可小刀</div>
+    <h3>8kg 上翻盖洗衣机（去年 6 月买，还在保修期）</h3>
+    <div class="price">面议</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>有正常使用磨损，实木结实耐用</dd></div>
-      <div><dt>区域</dt><dd>北岸 Schnapper Rock</dd></div>
+      <div><dt>成色</dt><dd>9 成新，膜都没撕，用过没几次</dd></div>
+      <div><dt>区域</dt><dd>东区</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月03日 · 虎了吧唧</dd></div>
+      <div><dt>发布</dt><dd>08/07 · A small coconut 💚</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>一桌六椅整套 $310，平均一个座位约 $50</li><li>实木结实，卖家明说家用 / 租房布景都合适</li><li>写明「可小刀」，有砍价空间</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>有使用磨损，颜值一般</li><li>整套体积大，要跑一趟满载</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>全表成色最好的洗衣机：买了不到一年，还在保修期内</li><li>卖家说「膜都没撕」「给租房房客用都不怕坏」，用得极少</li><li>节能省水，8kg 容量够两人用</li><li>是因为新家放不下才出，不是坏了才出 —— 这点很关键</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价，需要私信</li><li>上翻盖机型不能嵌进台面下，摆放要留顶部空间</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>$260-280</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8Schnapper%20Rock%20%E5%A4%8D%E5%8F%A4%E7%99%BD%E8%89%B2%E9%A4%90%E6%A1%8C6%E6%A4%85" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>问价；9 成新还在保修，$250-320 都算合理</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%90%AC%E5%AE%B6%E5%87%BA%E9%97%B2%E7%BD%AE%EF%BC%8C%E6%B4%97%E8%A1%A3%E6%9C%BA%EF%BC%8C9%E6%88%90%E6%96%B0" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="餐桌椅" data-star="3" data-price="0">
+<article class="card s3" data-cat="洗衣机/冰箱"
+  data-star="3" data-price="280" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323ihs0tf0a4g5qa96outuackfvr9j4o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>99 新洗衣机（原价 $699）</h3>
+    <div class="price">$280</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>99 新</dd></div>
+      <div><dt>区域</dt><dd>奥克兰</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 辻弍 (shí èr)</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>原价 $699 卖 $280，折价合理</li><li>99 新，故障风险低</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写品牌型号和容量，必须问</li><li>没写取货区域，也没写包不包送</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$250；先问型号、容量、用了多久</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA99%E6%96%B0%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E5%8E%9F%E4%BB%B7699%E7%8E%B0280%E5%87%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="洗衣机/冰箱"
+  data-star="3" data-price="220" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323idonk60ahg5n6booklqsj05puovf8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">🚚 可送货</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>LG 变频冰箱 GN-315FW（160×61×72）</h3>
+    <div class="price">$220</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>整机功能正常，干净无异味</dd></div>
+      <div><dt>区域</dt><dd>北岸 Windsor Park</dd></div>
+      <div><dt>取货</dt><dd>🚚 可送货（按距离报价）</dd></div>
+      <div><dt>发布</dt><dd>08/07 · Lynn</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>变频静音省电、多路风冷不结霜、Bio Silver 抗菌除味 —— 参数写得最清楚的一条</li><li>明说可以送货上门（送到门口，不搬上楼）</li><li>「不收订金，优先最早能取的朋友」—— 卖家很实在</li><li>尺寸标注精确，方便先量厨房位置</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>315L 两人够用，如果之后要囤货会偏小</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$220 已是好价；重点谈送货，能省一趟车</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BALG%E5%8F%98%E9%A2%91%E5%86%B0%E7%AE%B1GN-315FW" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="洗衣机/冰箱"
+  data-star="3" data-price="240" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jn5feo7i005obfj3h0j4codl3h2ko?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">💎 捡漏</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>三菱冰箱 420L</h3>
+    <div class="price">$240</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未注明</dd></div>
+      <div><dt>区域</dt><dd>北岸 Takapuna</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/06 · 园丁</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>420L 大容量 + 三菱品质，$240 是全表冰箱性价比第一</li><li>Takapuna 位置好，北岸主干道边</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子只有一行字，年份和成色全靠问</li><li>420L 很重很高，搬运要两人 + 推车</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$240 基本就是好价；先确认制冷正常、无异味</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8%20%E4%BA%8C%E6%89%8B%E4%B8%89%E8%8F%B1%E5%86%B0%E7%AE%B1" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="餐桌椅"
+  data-star="3" data-price="0" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323gpk87fg2005q7o1fddp8sf8akn5f0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
@@ -481,7 +530,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>做旧风格，有使用痕迹</dd></div>
       <div><dt>区域</dt><dd>奥克兰中区</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月06日 · 奥克兰出闲置-中区</dd></div>
+      <div><dt>发布</dt><dd>08/06 · 奥克兰出闲置-中区</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>四条腿可拆卸，普通轿车就能拉走 —— 直接省掉一趟货车钱</li><li>4-6 人够用，吃饭办公两用</li><li>中区取货，位置方便</li></ul></div>
@@ -491,8 +540,30 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%AE%9E%E6%9C%A8%E9%A4%90%E6%A1%8C%20%E5%9B%9B%E6%94%AF%E8%85%BF%E5%8F%AF%E6%8B%86%E5%8D%B8%20%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%AD%E5%8C%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s3" data-cat="办公桌/工学椅" data-star="3" data-price="150">
+<article class="card s3" data-cat="餐桌椅"
+  data-star="3" data-price="310" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323cvrctsnu904a0jj1es019jhtmcg4g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span><span class="tag">💎 捡漏</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>法式实木餐桌 + 6 张餐椅（自带灰坐垫）</h3>
+    <div class="price">整套 $310，可小刀</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>有正常使用磨损，实木结实耐用</dd></div>
+      <div><dt>区域</dt><dd>北岸 Schnapper Rock</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/03 · 虎了吧唧</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>一桌六椅整套 $310，平均一个座位约 $50</li><li>实木结实，卖家明说家用 / 租房布景都合适</li><li>写明「可小刀」，有砍价空间</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>有使用磨损，颜值一般</li><li>整套体积大，要跑一趟满载</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$260-280</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8Schnapper%20Rock%20%E5%A4%8D%E5%8F%A4%E7%99%BD%E8%89%B2%E9%A4%90%E6%A1%8C6%E6%A4%85" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="办公桌/工学椅"
+  data-star="3" data-price="150" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323joi291na005n7rj2ek0teknprcbv0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jomlohna705n7rj2ek0tekhl5b798?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">💻 办公桌/工学椅</span>
@@ -503,7 +574,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>状态良好，功能正常，有正常使用痕迹</dd></div>
       <div><dt>区域</dt><dd>北岸</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · Aaa123</dd></div>
+      <div><dt>发布</dt><dd>08/08 · Aaa123</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>带头枕 + 靠背可调 + 网布透气，是真正能久坐的那种</li><li>卖家逐条列了功能（升降顺畅、滑轮顺滑、扶手），信息最透明</li><li>08-08 新帖</li></ul></div>
@@ -513,8 +584,250 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%E7%94%B5%E8%84%91%E6%A4%85%20%E4%BA%BA%E4%BD%93%E5%B7%A5%E5%AD%A6%E7%BD%91%E6%A4%85%20%E5%B8%A6%E5%A4%B4%E6%9E%95" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="一站式" data-star="2" data-price="0">
+<article class="card s3" data-cat="保暖除湿"
+  data-star="3" data-price="180" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kra796mu00413gtjqjqkpjgsm4g4g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kra796mu0g413gtjqjqkpj83st0l8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span><span class="tag">🔥 首选</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>美的抽湿机（买回来就没用过，说明书都在）</h3>
+    <div class="price">$180</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>全新未使用，说明书齐全</dd></div>
+      <div><dt>区域</dt><dd>北岸 Albany</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Zaire</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>买回来一次没用过，等于全新</li><li>说明书还在，保修信息可查</li><li>今天刚发的帖，竞争最少</li><li>新西兰房子普遍潮，除湿机是刚需，不是可选项</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>$180 是二手除湿机偏上的价位</li><li>没写容量（L/日），要问清楚 —— 低于 10L/日 的对付不了奥克兰的冬天</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>先问日除湿量，10L 以上 $150-160 拿下</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20%E7%BE%8E%E7%9A%84%E6%8A%BD%E6%B9%BF%E6%9C%BA%20%E4%B9%B0%E5%9B%9E%E6%9D%A5%E5%B0%B1%E6%B2%A1%E7%94%A8%E8%BF%87" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="保暖除湿"
+  data-star="3" data-price="40" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kl1jlq7k5g5nrifgl0bh6m2l75c38?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kl1jlq7k4g5nrifgl0bh6m3gde0eg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span><span class="tag">🔥 首选</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>DeLonghi 暖气（9成新，制热快）</h3>
+    <div class="price">$40</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>9成新，朋友送的没用过几次</dd></div>
+      <div><dt>区域</dt><dd>东南区 Flat Bush</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Forever21</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$40 拿德龙，9 成新，性价比很高</li><li>制热快，卖家说颜值也好</li><li>今天刚发的帖</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写型号和功率，对付多大房间不确定</li><li>东南区 Flat Bush 偏远，建议和东区其他单一起跑</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$40 基本就是好价，直接约</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%BA9%E6%88%90%E6%96%B0heater%20DeLongHi%E6%9A%96%E6%B0%94%20flat%20bush" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="保暖除湿"
+  data-star="3" data-price="0" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jefgai7u704a5ttq11qjtf0rolrg8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jefgai7u7g4a5ttq11qjtfbqgpljg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>德龙陶瓷塔式取暖器（遥控 / ECO / 摇头 / 定时）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>自用换下，正常使用痕迹，机身干净</dd></div>
+      <div><dt>区域</dt><dd>东区 Mission Bay</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 笨笨马</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>功能是这一类里最全的：遥控、ECO 恒温、摇头送暖、定时、带提手可拖着走</li><li>陶瓷发热升温快，不像传统电暖片那么干燥，卧室能开整夜</li><li>德龙大牌，故障率低</li><li>卖家把每个功能逐条写清楚，是真在用的人</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价</li><li>塔式取暖器功率大，电费要算进去 —— 奥克兰冬天开整夜不便宜</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价；德龙塔式二手 $60-90 是合理区间</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0Mission%20Bay%20%E5%BE%B7%E9%BE%99%E9%99%B6%E7%93%B7%E5%A1%94%E5%BC%8F%E6%9A%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="保暖除湿"
+  data-star="3" data-price="0" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r032356t27cg2004a6q0lmmujbqgaefqc0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r032356t27cg20g4a6q0lmmujbqlg8kos8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>De&#x27;Longhi 德龙 DDS25 抽湿机（25L/日）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>成色非常新，机器一切正常</dd></div>
+      <div><dt>区域</dt><dd>北岸</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/28 · 星空</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>25L/日 是家用除湿机的高配档，整屋除湿 + 冬天干衣都够用</li><li>德龙是这个品类里最耐用的牌子之一</li><li>卖家写明成色非常新</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价，需要私信</li><li>大功率机器噪音和耗电都不低，卧室开整夜要考虑</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价；德龙 25L 二手 $200-280 是合理区间</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=De%27Longhi%20%E5%BE%B7%E9%BE%99%20DDS25%20%E5%BC%BA%E5%8A%9B%E6%8A%BD%E6%B9%BF%E6%9C%BA%2025L" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="清洁晾晒"
+  data-star="3" data-price="45" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323d7lsgh70705n578t4kbirv3a2k5c0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧹 清洁晾晒</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>吸尘器 2400W Bagless（Kmart 购入）</h3>
+    <div class="price">$45</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>功能使用正常</dd></div>
+      <div><dt>区域</dt><dd>奥克兰中区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/03 · 芃爸在NZ</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>2400W 有线大吸力，对付地毯比无线的强得多 —— 新西兰房子基本都铺地毯</li><li>Bagless 免尘袋，长期不用买耗材</li><li>中区自提，位置方便</li><li>写明购买渠道和功率，信息可核</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>有线机器活动半径受限，上下楼要重新插拔</li><li>Kmart 的机器不是高端货，寿命一般</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$40</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%E5%90%B8%E5%B0%98%E5%99%A8%202400W%20Bagless%20Vacuum%20Kmart" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s3" data-cat="厨房小电"
+  data-star="3" data-price="80" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jvb36f0o3048g09ojk80fnfrn1ir8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jvb36f0o3g48g09ojk80fnp2bqd88?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍳 厨房小电</span>
+      <span class="stars" title="强烈推荐">★★★</span></div>
+    <h3>LG 微波炉（Harvey Norman 购入，很新）</h3>
+    <div class="price">$80</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>很新，完全闲置</dd></div>
+      <div><dt>区域</dt><dd>西区 Westgate</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 1234唱首歌</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>LG 大牌，Harvey Norman 一手购入</li><li>$80 比同表另一台 LG（$190）便宜一半多</li><li>Westgate 那边还有 $60 的近新双人沙发，可以一趟取两件</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写容量升数</li><li>西区偏远，单独跑不划算</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$70；和 Westgate 的沙发一起安排</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%20LG%E5%BE%AE%E6%B3%A2%E7%82%89%20harveynorman%20westgate" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323ksupsl2q004a4okq1ldl47odbcl40?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323ksupsl2q0g4a4okq1ldl47jjc5830?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>北岸整屋清仓：美的 584L 双开门冰箱 / Vogue 8kg 热泵烘干机 / Queen 床</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未写年限，需私信问</dd></div>
+      <div><dt>区域</dt><dd>北岸 Campbells Bay</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Cecilia</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>热泵式烘干机在二手市场少见，比常见的排气式省一半以上电费，奥克兰冬天几乎天天要用</li><li>美的 584L 玻璃门双开门冰箱是本表容量最大的一台</li><li>台灯、4 斗柜、电视柜、Queen 床 + 椰棕床垫一趟全带走，配置基本齐一屋</li><li>另送 5 个 150L 搬家纸箱，刚落地或还要再搬一次的话直接省一笔</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>全帖没有一个价格，每件都要私信问，来回沟通成本高</li><li>冰箱和床要等到下周六才能取，急用的不合适</li><li>9kg 煤气罐是用剩的余量，接手要自己去验瓶和充装</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>先要一张整单报价表；584L 双开门二手行情 $400-550，8kg 热泵烘干机 $300-400，超出就单挑不打包</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BA%E5%AE%B6%E5%85%B7%20Campbells%20Bay%20%E7%BE%8E%E7%9A%84%E5%8F%8C%E5%BC%80%E9%97%A8%E5%86%B0%E7%AE%B1584L" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="399" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323lpgupq0m005pfmqc3ipu6dc6t2qk8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323lpgupq0m0g5pfmqc3ipu6dudo58rg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>离婚清仓：Freedom 全皮沙发 / 三星洗衣机 / 空气炸锅</h3>
+    <div class="price">沙发 $399 · 洗衣机 $420 · 空气炸锅打包 $800</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>三星 7kg 洗衣机两年新</dd></div>
+      <div><dt>区域</dt><dd>北岸 Oteha</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · iiiTms1eepy</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>Freedom 全皮沙发 $399，在本表真皮沙发里属于低位</li><li>标题写「最后一批」，卖家想尽快清完，整单打包砍价空间大</li><li>Oteha 和「奥克兰一家四口」同区，可以一天扫两家</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>三星 7kg 洗衣机 $420 明显偏贵 —— 同一天中区那台两年左右的只要 $220</li><li>空气炸锅「约 4000 个」打包 $800 是商用批量，家用完全不适合</li><li>没写沙发尺寸和皮面成色，去之前要先要细节图</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>只挑沙发，开 $330；洗衣机跳过，或压到 $250 以下再考虑</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E7%A6%BB%E5%A9%9A%E5%87%BA%E5%AE%B6%E5%85%B7%E6%9C%80%E5%90%8E%E4%B8%80%E6%89%B9%20OTEHA%E8%87%AA%E6%8F%90" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323l4i33e70004b735ilfa6a78t7ebv0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323l4i33e700g4b735ilfa6a7586clpg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>北岸 Oteha 出闲置 第一弹（价格标在图上）</h3>
+    <div class="price">见图标价</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未写</dd></div>
+      <div><dt>区域</dt><dd>北岸 Oteha</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 奥克兰一家四口</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>价格直接标在图上，不用来回私信问价，筛选效率高</li><li>标题写「第一弹」，说明后面还会继续出，值得关注这个号</li><li>和 iiiTms1eepy 同在 Oteha，一趟车可以两家一起看</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>正文一个字没写，全部信息靠翻图</li><li>没写成色和尺寸，图上只有价格</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>先看图上标价筛一遍；同区两家可以互相压价，说「隔壁也在出同款」</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20%E7%AC%AC%E4%B8%80%E5%BC%B9%20%E5%8C%97%E5%B2%B8oteha%E8%87%AA%E5%8F%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323l5mupjn400408ercrbkb894dubo70?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/1040g008323l5mupjn40g408ercrbkb890rg9cng?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>离纽清仓「给钱就卖」（City 自取）</h3>
+    <div class="price">面议（卖家写：给钱就卖）</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未写</dd></div>
+      <div><dt>区域</dt><dd>中区 City</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 是阿信呀</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>标题直接写「给钱就卖」，是这批里议价空间最大的一家</li><li>离纽走人有硬性时间压力，越接近离开的日子越好压价</li><li>City 自取，住市区的话走过去就能拿</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>正文只有「City自取」四个字，清单全在图里，也没说哪天走</li><li>写了「主页有更多」，要自己翻主页才知道全部有什么</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>看中的一律按二手行情三到四折开口 —— 是卖家自己说的给钱就卖，先问「你哪天走」再定砍价力度</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E7%A6%BB%E7%BA%BD%E5%87%BA%E9%97%B2%E7%BD%AE%20%E7%BB%99%E9%92%B1%E5%B0%B1%E5%8D%96%20%E4%B8%BB%E9%A1%B5%E6%9C%89%E6%9B%B4%E5%A4%9A%20City%E8%87%AA%E5%8F%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323krcmjk0a7g5p9q6530rtn2vdsssk0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323krcmjk0a805p9q6530rtn24qidhkg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>全新 / 近新好物清仓（价格尺寸都在图上）</h3>
+    <div class="price">见图标价</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>全新到近新</dd></div>
+      <div><dt>区域</dt><dd>中区 / 奥大</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 左左</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>价格和尺寸都标在图上，省掉来回问的时间</li><li>餐具水具可以约在奥大交接，学生顺路就能拿</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>大件家具只能中区自提，不送货</li><li>正文没列具体有哪些大件，得翻图才知道</li><li>「全新近新」通常意味着卖家心理价不会太低</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>按图上标价筛，超过新品五折的直接跳过</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%E5%85%A8%E6%96%B0%E8%BF%91%E6%96%B0%E5%A5%BD%E7%89%A9%20%E4%B8%AD%E5%8C%BA%E8%87%AA%E6%8F%90" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="西区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jni3987c705nn4huug8lhis0s7970?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jni3987c7g5nn4huug8lhi7njvug8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span>
@@ -525,7 +838,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>Target 购入，实木配件已装好</dd></div>
       <div><dt>区域</dt><dd>西区 半岛</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 重生之小饼干干</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 重生之小饼干干</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>书架 4 个 + 电视柜 + 电视一起，客厅一次配齐</li><li>Target 一手购入，附了官网图，可核对原价</li><li>已经装好，不用自己拧螺丝</li></ul></div>
@@ -535,8 +848,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%EF%BC%8C%E5%AE%9E%E6%9C%A8%E4%B9%A6%E6%9E%B6%EF%BC%8C%E7%94%B5%E8%A7%86%E6%9F%9C%EF%BC%8C%E7%94%B5%E8%A7%86%E6%9C%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="一站式" data-star="2" data-price="25">
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="25" data-region="东区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323ia5trj747g48q7615l92jbnp9lan8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span>
@@ -547,7 +860,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>茶几微瑕，边几厚实</dd></div>
       <div><dt>区域</dt><dd>东区 Flatbush</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 半筋半肉</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 半筋半肉</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>三件小件价格都低，一趟解决客厅零碎</li><li>尺寸都拍了图，信息透明</li></ul></div>
@@ -557,8 +870,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BA%E9%97%B2%E7%BD%AE%E5%AE%B6%E5%85%B7%20%E5%84%BF%E7%AB%A5HDPE%E4%B9%A6%E6%9E%B6%20Flatbush" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="一站式" data-star="2" data-price="0">
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="City">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323i4atoeg280400q59vcqsivcpdqcbg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span>
@@ -569,7 +882,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>奥克兰 City</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 薇薇周</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 薇薇周</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>五抽柜是卧室刚需（放换季衣物）</li><li>City 位置，顺路好取</li></ul></div>
@@ -579,8 +892,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%20%E6%90%AC%E5%AE%B6%E5%87%BA%E9%97%B2%E7%BD%AE%E4%BA%94%E6%8A%BD%E6%9F%9C%20city" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="一站式" data-star="2" data-price="0">
+<article class="card s2" data-cat="一站式"
+  data-star="2" data-price="0" data-region="其他">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323gu3l8ank005qgbdnfgg702icj2a3g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🆓 免费</span>
@@ -591,7 +904,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>奥克兰</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月05日 · 好好长大</dd></div>
+      <div><dt>发布</dt><dd>08/05 · 好好长大</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>0 元，车库 / 杂物间 / 洗衣房都实用</li></ul></div>
@@ -601,30 +914,30 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BA%E4%BA%8C%E6%89%8B%E9%97%B2%E7%BD%AE%20%E9%87%91%E5%B1%9E%E8%B4%A7%E6%9E%B6%20%E5%85%8D%E8%B4%B9" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="沙发" data-star="2" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323cuu2hrg0005n94bd94bannm97gcvg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s2" data-cat="沙发"
+  data-star="2" data-price="0" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323l0afse2q105ndbpmtg84kp95uokc0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323l0afse2q1g5ndbpmtg84kpjp52heo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🛋️ 沙发</span>
+    <div class="toprow"><span class="cat">🛋️ 沙发</span><span class="tag new">✨ 今日新增</span>
       <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>Harvey Norman 沙发（原价 $2999）</h3>
+    <h3>L 型沙发 3.2m（贵妃位 1.75m）</h3>
     <div class="price">面议</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>耐脏、无塌陷，可睡 2 个成年人</dd></div>
-      <div><dt>区域</dt><dd>东区 Glendowie</dd></div>
+      <div><dt>成色</dt><dd>无破损无撕裂，坐垫厚实有支撑，靠背舒适</dd></div>
+      <div><dt>区域</dt><dd>奥克兰（未写具体区）</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月03日 · L莎🎄🍬</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 吃到不好吃的會哭</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>本地大牌 Harvey Norman，原价近 $3000</li><li>卖家明说无塌陷 —— 二手沙发最关键的一点</li><li>够大，能当临时客床</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价，需要私信</li><li>HN 大沙发很重，需要 3 人搬</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>整体 3.2m、贵妃位 1.75m、深 1m，这个尺寸在二手市场很少见，大客厅才吃得下</li><li>长宽深都量好了，能直接判断放不放得下、进不进得了门</li><li>明确写了无破损、无撕裂，坐垫有支撑不塌</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>全帖没有价格，要私信问</li><li>只写「Auckland 自取」没说哪个区，可能跑很远</li><li>3.2m 的 L 型一个人绝对搬不动，得叫两三个人加大车，运费要提前算进预算</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>问价，$250-350 是合理区间</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%AD%E5%8C%BA%E5%87%BA%E6%B2%99%E5%8F%91%20harvey%20norman%20Glendowie" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>先问价和区；同尺寸二手布艺 L 型行情 $250-450，超过 $500 就不值得追</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BA%20%E8%B6%85%E8%88%92%E6%9C%8DL%E5%9E%8B%E6%B2%99%E5%8F%91" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="沙发" data-star="2" data-price="0">
+<article class="card s2" data-cat="沙发"
+  data-star="2" data-price="0" data-region="其他">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qg323jhvvn60m1048atdadu0j8tq580olo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span>
@@ -635,7 +948,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>基本没怎么用</dd></div>
       <div><dt>区域</dt><dd>奥克兰</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · Yanan Wang</dd></div>
+      <div><dt>发布</dt><dd>08/08 · Yanan Wang</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>3 米大沙发，可拆卸 —— 搬运和清洗都方便</li><li>卖家说基本没怎么用</li></ul></div>
@@ -645,30 +958,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BA%E6%B2%99%E5%8F%91%20%E5%B8%83%E8%89%BA%20%E5%8F%AF%E6%8B%86%E5%8D%B8" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="沙发" data-star="2" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323j7ufur0a705n3m8s4k1cbj84rav48?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323j7ufur0a7g5n3m8s4k1cbj80e7ue0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🛋️ 沙发</span>
-      <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>全新沙发 + 钢化玻璃餐桌4椅（Staging 样板家具）</h3>
-    <div class="price">面议</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>全新，仅做过 Open Home 展示</dd></div>
-      <div><dt>区域</dt><dd>西区</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 🐾Hi Westie🐾</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>2 月才买的全新家具，只摆过样板房，实际没人用过</li><li>三人位带贵妃座，可自己变成 3 人座 + 茶几，一物两用</li><li>沙发和餐桌椅可以一起谈，省一趟车</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价；Staging 家具卖家通常报价不低</li><li>设计感玻璃餐桌好看但不耐造，有小孩要慎重</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>问价；沙发 $400 / 餐桌椅 $250 是合理区间，两件一起谈</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%85%A8%E6%96%B0%20%E6%B2%99%E5%8F%91%20%E9%A4%90%E6%A1%8C%E6%A4%85%20%E5%87%BA%E5%85%A8%E6%96%B0%20Staging" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s2" data-cat="沙发" data-star="2" data-price="50">
+<article class="card s2" data-cat="沙发"
+  data-star="2" data-price="50" data-region="东区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jnm71q0odg48bf75l9u2khir3gkg8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jnm71q0o9g48bf75l9u2kh4kdavl8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span>
@@ -679,7 +970,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>左侧两坐垫弹簧塌陷，其余正常</dd></div>
       <div><dt>区域</dt><dd>东区 Howick</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 恩正沉沉</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 恩正沉沉</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>$50，两边座位都能折叠伸出腿托</li><li>卖家主动写明瑕疵，可信度高</li><li>185×90×95，尺寸够大</li></ul></div>
@@ -689,8 +980,52 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=50%20%E5%87%BA%E6%B2%99%E5%8F%91%20%E4%B8%9C%E5%8C%BAHowick%20%E8%87%AA%E6%8F%90" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="床架/床垫" data-star="2" data-price="120">
+<article class="card s2" data-cat="沙发"
+  data-star="2" data-price="0" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323j7ufur0a705n3m8s4k1cbj84rav48?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323j7ufur0a7g5n3m8s4k1cbj80e7ue0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛋️ 沙发</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>全新沙发 + 钢化玻璃餐桌4椅（Staging 样板家具）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>全新，仅做过 Open Home 展示</dd></div>
+      <div><dt>区域</dt><dd>西区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 🐾Hi Westie🐾</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>2 月才买的全新家具，只摆过样板房，实际没人用过</li><li>三人位带贵妃座，可自己变成 3 人座 + 茶几，一物两用</li><li>沙发和餐桌椅可以一起谈，省一趟车</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价；Staging 家具卖家通常报价不低</li><li>设计感玻璃餐桌好看但不耐造，有小孩要慎重</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价；沙发 $400 / 餐桌椅 $250 是合理区间，两件一起谈</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%85%A8%E6%96%B0%20%E6%B2%99%E5%8F%91%20%E9%A4%90%E6%A1%8C%E6%A4%85%20%E5%87%BA%E5%85%A8%E6%96%B0%20Staging" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="沙发"
+  data-star="2" data-price="0" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323cuu2hrg0005n94bd94bannm97gcvg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛋️ 沙发</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>Harvey Norman 沙发（原价 $2999）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>耐脏、无塌陷，可睡 2 个成年人</dd></div>
+      <div><dt>区域</dt><dd>东区 Glendowie</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/03 · L莎🎄🍬</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>本地大牌 Harvey Norman，原价近 $3000</li><li>卖家明说无塌陷 —— 二手沙发最关键的一点</li><li>够大，能当临时客床</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价，需要私信</li><li>HN 大沙发很重，需要 3 人搬</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价，$250-350 是合理区间</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%AD%E5%8C%BA%E5%87%BA%E6%B2%99%E5%8F%91%20harvey%20norman%20Glendowie" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="床架/床垫"
+  data-star="2" data-price="120" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323je7sjqn000453q3ls48kr4k285vlo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323je7sjqn00g453q3ls48kr4ebkcod0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span>
@@ -701,7 +1036,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>正常使用；床架被晒褪色，床垫偏硬</dd></div>
       <div><dt>区域</dt><dd>中区 Newmarket</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · tbnfrag</dd></div>
+      <div><dt>发布</dt><dd>08/08 · tbnfrag</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>全套 $120，还配了乳胶床褥，主卧应急很划算</li><li>Newmarket 中区，位置方便</li><li>08-08 新帖</li></ul></div>
@@ -711,8 +1046,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%AD%E5%8C%BA%E5%87%BAQueen%20size%E5%BA%8A%E6%9E%B6%E5%BA%8A%E5%9E%AB" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="床架/床垫" data-star="2" data-price="0">
+<article class="card s2" data-cat="床架/床垫"
+  data-star="2" data-price="0" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jctm3e7c005qggq1ljen0192rrdt8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323jcsttdig005qggq1ljen01fc32m1g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag">🆓 免费</span>
@@ -723,7 +1058,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>床垫已经很软（塌）</dd></div>
       <div><dt>区域</dt><dd>西区 New Windsor</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 一只🐌</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 一只🐌</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>0 元，床架和柜子还能用，纯赚</li></ul></div>
@@ -733,8 +1068,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%85%8D%E8%B4%B9%E5%BA%8A%E6%9E%B6%E5%BA%8A%E5%9E%AB%E5%92%8C%E6%9F%9C%E5%AD%90new%20windsor%20%E8%87%AA%E5%8F%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="床架/床垫" data-star="2" data-price="0">
+<article class="card s2" data-cat="床架/床垫"
+  data-star="2" data-price="0" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323fqodcaga105plpi907e81v13opun0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span>
@@ -745,7 +1080,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>全新，原盒包装</dd></div>
       <div><dt>区域</dt><dd>北岸</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月05日 · AJ furniture</dd></div>
+      <div><dt>发布</dt><dd>08/05 · AJ furniture</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>全新实木非板材，木蜡油涂层防霉防蛀</li><li>床高 30cm、床头 85cm，结构稳固承重好</li><li>是卖家不是个人闲置，有售后可追</li></ul></div>
@@ -755,8 +1090,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%98%AF%E8%B0%81%E8%BF%98%E6%B2%A1%E6%8B%A5%E6%9C%89%E5%8E%9F%E6%9C%A8Queen%E5%BA%8A%E6%9E%B6" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="床架/床垫" data-star="2" data-price="0">
+<article class="card s2" data-cat="床架/床垫"
+  data-star="2" data-price="0" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg31vnpbjs73qdg5plpi907e81v4bvk688?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span>
@@ -767,7 +1102,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>全新，原包装完整</dd></div>
       <div><dt>区域</dt><dd>北岸</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月05日 · AJ furniture</dd></div>
+      <div><dt>发布</dt><dd>08/05 · AJ furniture</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>Super King 尺寸二手极少见，全新更少</li><li>床板加宽加厚，承重 350kg，不摇晃</li><li>同一卖家还有 Queen，可以一起问</li></ul></div>
@@ -777,74 +1112,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%85%A8%E6%96%B0Super%20king%E5%AE%9E%E6%9C%A8%E5%BA%8A%E6%9E%B6%20%E5%8E%9F%E5%8C%85%E8%A3%85%E5%AE%8C%E6%95%B4" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="洗衣机/冰箱" data-star="2" data-price="150">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323gppbi67s4g4a75e7qr6ueghspgj50?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
-      <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>Fisher &amp; Paykel 冰箱</h3>
-    <div class="price">$150</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>未注明</dd></div>
-      <div><dt>区域</dt><dd>奥克兰</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月06日 · eric</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>F&amp;P 是新西兰本土品牌，配件和维修最好找</li><li>$150 价格低</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子只有一句话，型号、容量、成色全未知</li><li>要先问清楚再跑</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>$150 可入；先要型号和实拍</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%86%B0%E7%AE%B1%20fisher%20paykel%20150%20%E6%8B%BF%E8%B5%B0" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s2" data-cat="洗衣机/冰箱" data-star="2" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323da8sp4n070493nlqhgb5au298lid0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
-      <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>三星双开门冰箱（170×90，超大容量）</h3>
-    <div class="price">面议</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>冷藏冷冻功能正常；显示屏不能调温</dd></div>
-      <div><dt>区域</dt><dd>中区 Sylvia Park 附近</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月03日 · 大布</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>双开门 170×90，容量非常大，适合一次买一周菜</li><li>卖家主动说明了唯一缺点，诚实</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>显示屏不能调温 = 只能用默认档，二手件不好修</li><li>双开门超重，必须 3-4 人 + 大车</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>用「显示屏坏了」砍价；$250-350 是合理区间</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E9%97%B2%E7%BD%AE%E4%B8%89%E6%98%9F%E5%8F%8C%E5%BC%80%E9%97%A8%E5%86%B0%E7%AE%B1%20Sylvia%20Park" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s2" data-cat="洗衣机/冰箱" data-star="2" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323enajfjnu0g4a8i4hn3u6gjnpg2bs0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">⏰ 8/20后取</span>
-      <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>Hisense 8.5kg 滚筒 + Hisense 417L 冰箱</h3>
-    <div class="price">面议</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>基本全新，无损坏，维护很好</dd></div>
-      <div><dt>区域</dt><dd>中区 Zetland</dd></div>
-      <div><dt>取货</dt><dd>自提（8/20-22）</dd></div>
-      <div><dt>发布</dt><dd>8月04日 · 小黄🐟</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>两个女生自用，保养好，冰箱可制冰、无维修记录</li><li>洗衣机能洗羊毛不缩水（试过），模式多</li><li>洗衣机 + 冰箱一起买有优惠</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>取货要等 8/20 之后 —— 如果你们月中入住就来不及</li><li>冰箱目前 hold 中，不一定还有</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>问价；洗衣机 $300 / 冰箱 $450 是合理区间</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%AF%95%E4%B8%9A%E5%87%BA%E9%97%B2%E7%BD%AE%20HISENSE%20%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E5%86%B0%E7%AE%B1%20zetland" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s2" data-cat="洗衣机/冰箱" data-star="2" data-price="499">
+<article class="card s2" data-cat="洗衣机/冰箱"
+  data-star="2" data-price="499" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323ju17hii85g5n2l082m6i5b63rh7lg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
@@ -855,7 +1124,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>近新，成色新</dd></div>
       <div><dt>区域</dt><dd>北岸 Pinehill</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · Eric</dd></div>
+      <div><dt>发布</dt><dd>08/08 · Eric</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>高配 Bosch，十几种功能，可调水温、有速洗</li><li>博世是洗衣机里最耐用的一档</li><li>同一卖家还在出书桌，可以一起谈</li></ul></div>
@@ -865,8 +1134,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%BA%8C%E6%89%8B%20%E8%BF%91%E6%96%B0Bosch%E5%8D%9A%E4%B8%96%E6%BB%9A%E7%AD%92%E6%B4%97%E8%A1%A3%E6%9C%BA%20pinehill" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="洗衣机/冰箱" data-star="2" data-price="1500">
+<article class="card s2" data-cat="洗衣机/冰箱"
+  data-star="2" data-price="1500" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323id03rh2a004a2vfq0c9bm06v3n9v8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323id03rh2a0g4a2vfq0c9bm01e8oosg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
@@ -877,7 +1146,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>保养良好，功能正常，干净</dd></div>
       <div><dt>区域</dt><dd>中区 Royal Oak</dd></div>
       <div><dt>取货</dt><dd>自提，🉑议价</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 陈小雨</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 陈小雨</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>Miele 是洗衣机天花板，正常能用 20 年</li><li>洗 + 烘一套，解决新西兰冬天衣服晾不干的老大难</li><li>卖家写明可以小刀</li></ul></div>
@@ -887,74 +1156,96 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%BD%E7%89%A9%E5%AF%BB%E6%89%BE%E4%B8%8B%E4%B8%80%E4%BB%BB%E4%B8%BB%E4%BA%BA%20Miele%20W1%20%E7%83%AD%E6%B3%B5%E7%83%98%E5%B9%B2%E6%9C%BA%20royal%20oak" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="餐桌椅" data-star="2" data-price="280">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323ijbcj076005n6fk1t5ncafdc0s9i0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s2" data-cat="洗衣机/冰箱"
+  data-star="2" data-price="150" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323gppbi67s4g4a75e7qr6ueghspgj50?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
       <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>圆形玻璃餐桌 + 3 张灰色软垫餐椅</h3>
-    <div class="price">桌$200 / 椅$100 / 整套$280</div>
+    <h3>Fisher &amp; Paykel 冰箱</h3>
+    <div class="price">$150</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>整体状况良好</dd></div>
-      <div><dt>区域</dt><dd>奥克兰南区</dd></div>
+      <div><dt>成色</dt><dd>未注明</dd></div>
+      <div><dt>区域</dt><dd>奥克兰</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · J.M</dd></div>
+      <div><dt>发布</dt><dd>08/06 · eric</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>可以单出也可以整套，灵活</li><li>900×900 圆桌，小户型 / 饭厅刚好</li><li>颜色简约耐看</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>只有 3 张椅子，四口人要再补一张</li><li>玻璃桌面有小孩的话要小心</li><li>南区较远</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>F&amp;P 是新西兰本土品牌，配件和维修最好找</li><li>$150 价格低</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子只有一句话，型号、容量、成色全未知</li><li>要先问清楚再跑</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>整套 $240-260</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%9C%86%E5%BD%A2%E9%A4%90%E6%A1%8C%203%E5%BC%A0%E9%A4%90%E6%A4%85%E5%87%BA%E5%94%AE" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>$150 可入；先要型号和实拍</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%86%B0%E7%AE%B1%20fisher%20paykel%20150%20%E6%8B%BF%E8%B5%B0" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="餐桌椅" data-star="2" data-price="600">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323ffghk4n42g4a52nicosh54p6jnmm8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s2" data-cat="洗衣机/冰箱"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323enajfjnu0g4a8i4hn3u6gjnpg2bs0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag">⏰ 8/20后取</span>
       <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>全实木榉木餐桌（150→190 可加长）+ 6 榉木餐椅</h3>
-    <div class="price">$600 不议价</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>状态非常好</dd></div>
-      <div><dt>区域</dt><dd>Orewa</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月05日 · 三二一</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>榉木整套，用料是全表最扎实的</li><li>可加长到 190cm，来客人也坐得下</li><li>一桌六椅，一次配齐</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>明确写了不议价</li><li>Orewa 在奥克兰最北端，市区来回近 2 小时</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>接受 $600 或放弃；先问能不能约在市区交接</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%20%E5%87%BA%20%E5%85%A8%E5%AE%9E%E6%9C%A8%E6%A6%89%E6%9C%A8%E9%A4%90%E6%A1%8C%E6%A4%85%20Orewa" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s2" data-cat="餐桌椅" data-star="2" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323ij5ovn74205oq4u8u2kh3uktttqlo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span><span class="tag">⚠️ 代卖</span>
-      <span class="stars" title="值得一问">★★☆</span></div>
-    <h3>桃花心木古董餐桌 + 6 椅（英国摄政风）</h3>
+    <h3>Hisense 8.5kg 滚筒 + Hisense 417L 冰箱</h3>
     <div class="price">面议</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>老家具，有岁月痕迹但无破损，骨架稳固</dd></div>
-      <div><dt>区域</dt><dd>奥克兰同城</dd></div>
-      <div><dt>取货</dt><dd>🚚 可协商送货</dd></div>
-      <div><dt>发布</dt><dd>8月06日 · Euston Road</dd></div>
+      <div><dt>成色</dt><dd>基本全新，无损坏，维护很好</dd></div>
+      <div><dt>区域</dt><dd>中区 Zetland</dd></div>
+      <div><dt>取货</dt><dd>自提（8/20-22）</dd></div>
+      <div><dt>发布</dt><dd>08/04 · 小黄🐟</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>1.7×0.85m 实木老家具，骨架稳固，值得传下去</li><li>椅子自带古典软包，坐着舒服</li><li>可协商送货</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>⚠️ 卖家写明「本人不在国内」= 代卖，务必要求视频看货</li><li>⚠️「链接仅为定金不退」—— 不要提前转账，坚持当面交易</li><li>古董风格不百搭，要和你们的装修对得上</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>两个女生自用，保养好，冰箱可制冰、无维修记录</li><li>洗衣机能洗羊毛不缩水（试过），模式多</li><li>洗衣机 + 冰箱一起买有优惠</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>取货要等 8/20 之后 —— 如果你们月中入住就来不及</li><li>冰箱目前 hold 中，不一定还有</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>问价；坚持先视频看货、当面付款</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E8%BD%AC%E5%85%AD%E4%BA%BA%E6%A1%83%E8%8A%B1%E5%BF%83%E6%9C%A8%E9%A4%90%E6%A1%8C%E9%A4%90%E6%A4%85" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>问价；洗衣机 $300 / 冰箱 $450 是合理区间</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%AF%95%E4%B8%9A%E5%87%BA%E9%97%B2%E7%BD%AE%20HISENSE%20%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E5%86%B0%E7%AE%B1%20zetland" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="餐桌椅" data-star="2" data-price="60">
+<article class="card s2" data-cat="洗衣机/冰箱"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323da8sp4n070493nlqhgb5au298lid0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>三星双开门冰箱（170×90，超大容量）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>冷藏冷冻功能正常；显示屏不能调温</dd></div>
+      <div><dt>区域</dt><dd>中区 Sylvia Park 附近</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/03 · 大布</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>双开门 170×90，容量非常大，适合一次买一周菜</li><li>卖家主动说明了唯一缺点，诚实</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>显示屏不能调温 = 只能用默认档，二手件不好修</li><li>双开门超重，必须 3-4 人 + 大车</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>用「显示屏坏了」砍价；$250-350 是合理区间</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E9%97%B2%E7%BD%AE%E4%B8%89%E6%98%9F%E5%8F%8C%E5%BC%80%E9%97%A8%E5%86%B0%E7%AE%B1%20Sylvia%20Park" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="餐桌椅"
+  data-star="2" data-price="150" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323l1q9pe7ka05o6cmc9gbnqgdub7k4g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323l1q9pe7kag5o6cmc9gbnqgbggrr90?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>实木餐桌 150×90×75</h3>
+    <div class="price">$150</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>实木，未写年限</dd></div>
+      <div><dt>区域</dt><dd>中区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · lll</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$150 买 1.5m × 0.9m 实木餐桌，四口之家够用，在本表实木餐桌里属于低位</li><li>尺寸写全了，能提前量车和量餐厅</li><li>同一卖家还在出 Double 床，可以一趟车两件一起拿</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>只有桌子不含椅子，还得另配四把</li><li>没写成色和用了几年，实木表面容易有刀痕和水渍，要先要细节图</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>开 $120；如果连他的 Double 床一起拿，整单压到 $300</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20%E5%AE%9E%E6%9C%A8%E9%A4%90%E6%A1%8C%20%E4%B8%AD%E5%8C%BA%E8%87%AA%E5%8F%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="餐桌椅"
+  data-star="2" data-price="60" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jmorh7ga005o4enqeg95h5a1v00cg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
@@ -965,7 +1256,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>几乎全新</dd></div>
       <div><dt>区域</dt><dd>中区 Mt Albert</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · tongtongtong</dd></div>
+      <div><dt>发布</dt><dd>08/08 · tongtongtong</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>用了不到 3 个月，几乎全新</li><li>软，耐脏好打理，配餐桌很实用</li><li>中区位置好</li></ul></div>
@@ -975,8 +1266,96 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%BA%8C%E6%89%8B%E9%97%B2%E7%BD%AE%E6%A4%85%E5%AD%9060%20%E7%9A%AE%E8%B4%A8%20mt%20albert" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="办公桌/工学椅" data-star="2" data-price="200">
+<article class="card s2" data-cat="餐桌椅"
+  data-star="2" data-price="280" data-region="南区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323ijbcj076005n6fk1t5ncafdc0s9i0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>圆形玻璃餐桌 + 3 张灰色软垫餐椅</h3>
+    <div class="price">桌$200 / 椅$100 / 整套$280</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>整体状况良好</dd></div>
+      <div><dt>区域</dt><dd>奥克兰南区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/07 · J.M</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>可以单出也可以整套，灵活</li><li>900×900 圆桌，小户型 / 饭厅刚好</li><li>颜色简约耐看</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>只有 3 张椅子，四口人要再补一张</li><li>玻璃桌面有小孩的话要小心</li><li>南区较远</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>整套 $240-260</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%9C%86%E5%BD%A2%E9%A4%90%E6%A1%8C%203%E5%BC%A0%E9%A4%90%E6%A4%85%E5%87%BA%E5%94%AE" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="餐桌椅"
+  data-star="2" data-price="0" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g008323ij5ovn74205oq4u8u2kh3uktttqlo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span><span class="tag">⚠️ 代卖</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>桃花心木古董餐桌 + 6 椅（英国摄政风）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>老家具，有岁月痕迹但无破损，骨架稳固</dd></div>
+      <div><dt>区域</dt><dd>奥克兰同城</dd></div>
+      <div><dt>取货</dt><dd>🚚 可协商送货</dd></div>
+      <div><dt>发布</dt><dd>08/06 · Euston Road</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>1.7×0.85m 实木老家具，骨架稳固，值得传下去</li><li>椅子自带古典软包，坐着舒服</li><li>可协商送货</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>⚠️ 卖家写明「本人不在国内」= 代卖，务必要求视频看货</li><li>⚠️「链接仅为定金不退」—— 不要提前转账，坚持当面交易</li><li>古董风格不百搭，要和你们的装修对得上</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价；坚持先视频看货、当面付款</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E8%BD%AC%E5%85%AD%E4%BA%BA%E6%A1%83%E8%8A%B1%E5%BF%83%E6%9C%A8%E9%A4%90%E6%A1%8C%E9%A4%90%E6%A4%85" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="餐桌椅"
+  data-star="2" data-price="600" data-region="远郊">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323ffghk4n42g4a52nicosh54p6jnmm8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>全实木榉木餐桌（150→190 可加长）+ 6 榉木餐椅</h3>
+    <div class="price">$600 不议价</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>状态非常好</dd></div>
+      <div><dt>区域</dt><dd>Orewa</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/05 · 三二一</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>榉木整套，用料是全表最扎实的</li><li>可加长到 190cm，来客人也坐得下</li><li>一桌六椅，一次配齐</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>明确写了不议价</li><li>Orewa 在奥克兰最北端，市区来回近 2 小时</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>接受 $600 或放弃；先问能不能约在市区交接</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%20%E5%87%BA%20%E5%85%A8%E5%AE%9E%E6%9C%A8%E6%A6%89%E6%9C%A8%E9%A4%90%E6%A1%8C%E6%A4%85%20Orewa" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="办公桌/工学椅"
+  data-star="2" data-price="100" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323l2d7jlga004aoj27o64p9vhf34if8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323l2d7jlga0g4aoj27o64p9vjkrfo70?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">💻 办公桌/工学椅</span><span class="tag new">✨ 今日新增</span><span class="tag">🚚 可送货</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>书桌 1500×700×720</h3>
+    <div class="price">$100</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>状况非常好、无损，卖家称平时注重保养</dd></div>
+      <div><dt>区域</dt><dd>中区</dd></div>
+      <div><dt>取货</dt><dd>🚚 可送货（费用另议）</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Welly</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>1.5m × 0.7m 是能同时放两台显示器还留出手写空间的尺寸，$100 不贵</li><li>卖家愿意商量送货，省掉租车或叫人的钱 —— 桌子是最难塞进轿车的一类</li><li>明确写了无损、注重保养，三围也量好了</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写材质和品牌，也没说是不是升降款（大概率是固定高度）</li><li>「送货可议」意味着还要另外谈运费，总价可能不止 $100</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>自提开 $80；要送货就按 $100 成交别再压，运费另算也划算</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%E4%B9%A6%E6%A1%8C%201500%20700%20720%20%E4%B8%AD%E5%8C%BA%E8%87%AA%E6%8F%90" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="办公桌/工学椅"
+  data-star="2" data-price="200" data-region="其他">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323kgtpj00o6g5o8da8hg81ajqe3k1m8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">💻 办公桌/工学椅</span><span class="tag">⏰ 限时</span>
@@ -987,7 +1366,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>奥克兰</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 奥克兰出闲置</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 奥克兰出闲置</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>升降桌 + 电视 $200，是全表升降桌最低价</li></ul></div>
@@ -997,8 +1376,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A4%A7%E5%8D%87%E9%99%8D%E6%A1%8C%2B%E5%A4%A7%E7%94%B5%E8%A7%86%20200%E4%B8%80%E5%A5%97%E5%87%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s2" data-cat="办公桌/工学椅" data-star="2" data-price="0">
+<article class="card s2" data-cat="办公桌/工学椅"
+  data-star="2" data-price="0" data-region="City">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323josaod2g2g49ssd0c58gm5jsge0eo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323josaod2g2049ssd0c58gm5f5svrho?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">💻 办公桌/工学椅</span>
@@ -1009,7 +1388,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>2022 年底购入，没怎么用，状况好</dd></div>
       <div><dt>区域</dt><dd>奥大 City 校区工程楼</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 圈圈的留学生活</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 圈圈的留学生活</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>放在现有桌子上就能站立办公，是最省钱的升降方案</li><li>上层放显示器、下层放键鼠，可拆卸</li><li>City 校区取货方便</li></ul></div>
@@ -1019,52 +1398,228 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0City%E5%87%BA%E9%97%B2%E7%BD%AE%E5%8D%87%E9%99%8D%E6%A1%8C" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="一站式" data-star="1" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jagrhc7u004a2t6ca5itd5eo5jnr0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s2" data-cat="保暖除湿"
+  data-star="2" data-price="20" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kfqhnigo0049nukso4sdekcspl2rg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kfqhnigo0g49nukso4sdeks9j7uf0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🆓 免费</span>
-      <span class="stars" title="观望">★☆☆</span></div>
-    <h3>免费微波炉（松下，有锈斑）</h3>
-    <div class="price">免费</div>
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>除湿机（功能一切正常）</h3>
+    <div class="price">$20</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>有锈斑，不影响使用</dd></div>
-      <div><dt>区域</dt><dd>中区 Mt Eden</dd></div>
+      <div><dt>成色</dt><dd>功能一切正常</dd></div>
+      <div><dt>区域</dt><dd>奥克兰</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · Jaelala 🍷</dd></div>
+      <div><dt>发布</dt><dd>08/08 · nice 嘭嘭</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>0 元，刚搬家过渡完全够用</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>有锈斑，长期用不放心，之后还是要换</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>$20，全表最便宜的除湿机，几乎是白送</li><li>08-08 新帖</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子只有一行字：容量、品牌、年份、取货区域全未知</li><li>$20 的除湿机大概率是小容量老机，只能对付一个房间</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>顺路就拿</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=Mt%20Eden%E5%85%8D%E8%B4%B9%E5%BE%AE%E6%B3%A2%E7%82%89" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>$20 值得问一句；先要型号和区域，别为它跑远路</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%20%E9%99%A4%E6%B9%BF%E6%9C%BA%20%E5%8A%9F%E8%83%BD%E4%B8%80%E5%88%87%E6%AD%A3%E5%B8%B8%2020" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="一站式" data-star="1" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323df1k7pg2004a0q2cuk9up8cccom48?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s2" data-cat="保暖除湿"
+  data-star="2" data-price="0" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323gkvs0ug2a05qa3crlttk2b05sto40?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323gkvs0ug2ag5qa3crlttk2b6pnb950?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🏠 一站式</span>
-      <span class="stars" title="观望">★☆☆</span></div>
-    <h3>打包可优惠（Mount Roskill / Epsom）</h3>
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span><span class="tag">🚚 可送货</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>50L 大功率除湿机（用过两个冬天）</h3>
     <div class="price">面议</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>未注明</dd></div>
-      <div><dt>区域</dt><dd>中区 Mt Roskill / Epsom</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月03日 · 考拉王</dd></div>
+      <div><dt>成色</dt><dd>用了两个冬天，其余时间闲置</dd></div>
+      <div><dt>区域</dt><dd>西区 Hobsonville</dd></div>
+      <div><dt>取货</dt><dd>🚚 自取或付费送</dd></div>
+      <div><dt>发布</dt><dd>08/05 · 小番薯</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>明说「打包可优惠」，适合一次多拿几件</li><li>两个取货点都在中区，位置方便</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子信息少，得私信要清单</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>50L 是准商用级别，两层楼的房子也压得住</li><li>两种出水方式，可以接排水管免去倒水</li><li>可以付费送货</li><li>卖家主动说「湿度低于60的不要买，买个10-20L足够」—— 这种劝你别买贵的卖家，说的话可信</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>50L 对普通租房是过剩配置，电费也高，除非新家真的很潮</li><li>用了两个冬天，不是新机</li><li>没标价</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>问清单 + 打包价</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20%E6%89%93%E5%8C%85%E5%8F%AF%E4%BC%98%E6%83%A0%20Mount%20Roskill%20Epsom" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>先量一下新家的湿度再决定；真潮的话问价，$250 以内可考虑</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%2050L%E9%99%A4%E6%B9%BF%E6%9C%BA%20Hobsonville" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="一站式" data-star="1" data-price="0">
+<article class="card s2" data-cat="保暖除湿"
+  data-star="2" data-price="0" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qo323e17efj7a704a4q9nuvenk0jgun6i0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qo323e17efj7a7g4a4q9nuvenk0b1ig288?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span><span class="tag">⚠️ 电压待确认</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>格力大功率油汀电暖器（带遥控、定时、调温）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>国内海运来的</dd></div>
+      <div><dt>区域</dt><dd>奥克兰东区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/03 · Coral姐姐</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>油汀是最适合卧室开整夜的类型：无风、不干燥、断电后还能续热</li><li>带遥控和定时</li><li>大功率，房间大也压得住</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>国内海运来的机器是 220V，新西兰是 230V —— 一般能用但要确认插头和电压标注</li><li>油汀很重，搬运不轻松</li><li>没标价</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价并确认电压/插头；$50-80 是合理区间</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%9C%E5%8C%BA%E5%87%BA%E6%A0%BC%E5%8A%9B%E5%A4%A7%E5%8A%9F%E7%8E%87%E6%B2%B9%E9%85%8A%E7%94%B5%E6%9A%96%E5%99%A8" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="保暖除湿"
+  data-star="2" data-price="20" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k83236cja4v7a005p1m4ks3jqtioq73ok0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>电暖器（买了一个月，没怎么用）</h3>
+    <div class="price">$20</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>买了一个月，几乎没用</dd></div>
+      <div><dt>区域</dt><dd>奥克兰</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/28 · 无霾</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$20 且只用了一个月，折价很狠</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写品牌功率和取货区域，得私信问全</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$20 可入；先问区域，别为 $20 跑半个奥克兰</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%BA%E4%BA%8C%E6%89%8B%E7%94%B5%E6%9A%96%E5%99%A8%20%E7%94%B5%E6%9A%96%E5%99%A8%E4%B9%B0%E4%BA%86%E4%B8%80%E4%B8%AA%E6%9C%88%2020%E5%88%80%E5%87%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="清洁晾晒"
+  data-star="2" data-price="5" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323lnb7htn4605np1cg8g862lp5eoh08?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323lnb7htn41g5np1cg8g862l5k461cg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧹 清洁晾晒</span><span class="tag new">✨ 今日新增</span><span class="tag">⏰ 限时</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>全新手持蒸汽挂烫机</h3>
+    <div class="price">$5</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>全新未用</dd></div>
+      <div><dt>区域</dt><dd>东区 Botany</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Voidisreal</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$5 的全新手持挂烫机，比任何二手价都低，基本没有还价必要</li><li>卖家写明「卖不掉这周末就扔掉」，时间压力全在卖家那边</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>同帖的床头柜、KitchenAid 厨师机、另一台挂烫机都已标「已售勿拍」，只剩这一台</li><li>单价太低，卖家未必愿意为此专门等你，最好顺路去 Botany 时一并取</li><li>手持款功率小，只能应付衬衫和薄外套</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$5 直接拿，不要砍</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=moving%20sale%20%E8%87%AA%E6%8F%90%20%E5%BF%AB%E6%9D%A5%E8%96%85%E7%BE%8A%E6%AF%9B%20Botany" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="清洁晾晒"
+  data-star="2" data-price="10" data-region="City">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323jmbefsn4705ojkiu7ocsmakhj4j5g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qg323kgjohvn4005ojkiu7ocsmaliuo9e8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧹 清洁晾晒</span><span class="tag">⏰ 8/17-18取</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>吸尘器 $10 + 净水器 $18 + 阻门器 $15 等小件</h3>
+    <div class="price">$10 起</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>吸尘器在毛毯上吸长头发不灵敏，其余正常</dd></div>
+      <div><dt>区域</dt><dd>奥克兰 City</dd></div>
+      <div><dt>取货</dt><dd>自提（8/17-18）</dd></div>
+      <div><dt>发布</dt><dd>08/08 · Tyche</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>吸尘器只要 $10，当过渡机完全够</li><li>顺带净水器、阻门器、U型枕，一趟扫掉一堆小件</li><li>卖家主动说明了吸尘器的短板，诚实</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>吸长头发不灵敏 —— 如果家里有长发的人，这台不合适</li><li>取货只有 8/17-18 两天</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>小件打包 $40；吸尘器只当备用机</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0city%E5%87%BA%E9%97%B2%E7%BD%AE%20%E5%85%A8%E6%96%B0%E6%B0%B4%E9%BE%99%E5%A4%B4%E5%87%80%E6%B0%B4%E5%99%A8%2018%E5%88%80%20%E5%90%B8%E5%B0%98%E5%99%A8%2010%E5%88%80" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="清洁晾晒"
+  data-star="2" data-price="40" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r03236js86onu005pvkmrt1ibkq4f4jvpo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r03236js86onu0g5pvkmrt1ibkq8fees78?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧹 清洁晾晒</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>吸尘器（只用过一次）+ 另一件全新 $50</h3>
+    <div class="price">吸尘器 $40 / 另件 $50</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>吸尘器只用了一次</dd></div>
+      <div><dt>区域</dt><dd>City 或 Dominion Rd 一带</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/29 · 新止语</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>只用过一次，接近全新</li><li>卖家写明「诚心要可小刀」，有砍价空间</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写品牌型号，要先要实拍和型号</li><li>取货地点写得含糊，要问准</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$30-35</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%A4%84%E7%90%86%E9%97%B2%E7%BD%AE%20%E5%90%B8%E5%B0%98%E5%99%A8%E5%8F%AA%E7%94%A8%E4%BA%86%E4%B8%80%E6%AC%A140%E5%88%80" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="厨房小电"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323458ugl7k1g5qgeu3n0g600efnor30?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323458ugl7k205qgeu3n0g600cbd7gr8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍳 厨房小电</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>松下微波炉 32L（变频，成色新）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>成色新</dd></div>
+      <div><dt>区域</dt><dd>中区 St Heliers</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/27 · 小红薯6A0F9E51</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>32L 大容量 + 变频，是微波炉里的好配置，热得均匀</li><li>松下的变频机故障率低</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价</li><li>32L 占台面，要先量厨房位置</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价；松下 32L 变频二手 $80-120 合理</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%AD%E5%8C%BA%E9%97%B2%E7%BD%AE%E5%BE%AE%E6%B3%A2%E7%82%89%20%E6%9D%BE%E4%B8%8B%E5%BE%AE%E6%B3%A2%E7%82%8932L%20%E5%8F%98%E9%A2%91" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="厨房小电"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k0323401cugg20g5n1n7m0hmijtsnina3g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r83234049hano705n1n7m0hmijt4gst980?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍳 厨房小电</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>音响 / Living Co 微波炉 / 120×80 桌子 / 买菜车</h3>
+    <div class="price">面议（打包）</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未注明</dd></div>
+      <div><dt>区域</dt><dd>中区 Onehunga</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/27 · 小蜗才不是蜗牛</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>微波炉 + 桌子 + 买菜小车，搬家刚需一次凑齐</li><li>Onehunga 位置居中，好安排</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价没写成色，全靠私信</li><li>收银台这种东西说明可能是店铺清仓，不一定是家用件</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>要清单和打包价</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=akl%20%E6%90%AC%E5%AE%B6%E5%87%BA%E9%97%B2%E7%BD%AE%20living%20co%E5%BE%AE%E6%B3%A2%E7%82%89%20onehunga" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2" data-cat="客厅收纳"
+  data-star="2" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qo323km60m1go705n5g5h74bl8la3mgqng?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qo323km60m1go7g5n5g5h74bl8l1ejf7og?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">📺 客厅收纳</span><span class="tag new">✨ 今日新增</span><span class="tag">🆓 免费</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>木质置物架 + 调料抽拉收纳架（免费）</h3>
+    <div class="price">免费</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未写</dd></div>
+      <div><dt>区域</dt><dd>中区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · yev94</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>完全免费，中区自取，路程短，白跑一趟的成本也低</li><li>两件都是厨房和客厅立刻能用上的小收纳，租房最容易缺</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>卖家要求两件一起拿走，不能只挑一件</li><li>没写尺寸和成色，可能有明显使用痕迹</li><li>免费件抢的人多，去晚基本就没了</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>免费，直接约时间，别再谈条件</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%E5%85%8D%E8%B4%B9%E9%80%81%20%E6%9C%A8%E8%B4%A8%E7%BD%AE%E7%89%A9%E6%9E%B6%20%E8%B0%83%E6%96%99%E6%8A%BD%E6%8B%89%E6%94%B6%E7%BA%B3%E6%9E%B6" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="一站式"
+  data-star="1" data-price="0" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323jrllocio005qj21gjjej01e2no8co?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🏠 一站式</span>
@@ -1075,7 +1630,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>中区 Epsom</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 小红薯6A637589</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 小红薯6A637589</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>搬迁清仓，卖家急着出，砍价空间大</li></ul></div>
@@ -1085,8 +1640,52 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%90%AC%E8%BF%81%E6%B8%85%E4%BB%93%EF%BC%8CEpsom%E8%87%AA%E5%8F%96%EF%BC%8C%E5%A5%A5%E5%85%8B%E5%85%B0%E4%B8%AD%E5%8C%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="沙发" data-star="1" data-price="0">
+<article class="card s1" data-cat="一站式"
+  data-star="1" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jagrhc7u004a2t6ca5itd5eo5jnr0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span><span class="tag">🆓 免费</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>免费微波炉（松下，有锈斑）</h3>
+    <div class="price">免费</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>有锈斑，不影响使用</dd></div>
+      <div><dt>区域</dt><dd>中区 Mt Eden</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/07 · Jaelala 🍷</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>0 元，刚搬家过渡完全够用</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>有锈斑，长期用不放心，之后还是要换</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>顺路就拿</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=Mt%20Eden%E5%85%8D%E8%B4%B9%E5%BE%AE%E6%B3%A2%E7%82%89" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="一站式"
+  data-star="1" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323df1k7pg2004a0q2cuk9up8cccom48?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🏠 一站式</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>打包可优惠（Mount Roskill / Epsom）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未注明</dd></div>
+      <div><dt>区域</dt><dd>中区 Mt Roskill / Epsom</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/03 · 考拉王</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>明说「打包可优惠」，适合一次多拿几件</li><li>两个取货点都在中区，位置方便</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>帖子信息少，得私信要清单</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问清单 + 打包价</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20%E6%89%93%E5%8C%85%E5%8F%AF%E4%BC%98%E6%83%A0%20Mount%20Roskill%20Epsom" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="沙发"
+  data-star="1" data-price="0" data-region="西区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo321o0uo3mnc004bncalktp202ckeal6g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span>
@@ -1097,7 +1696,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>西区 West Harbour</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月07日 · 水豚好可愛😍</dd></div>
+      <div><dt>发布</dt><dd>08/07 · 水豚好可愛😍</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>电动真皮三人躺椅，新品 $3000+</li><li>卖家急着腾空间给宝宝，有砍价余地</li></ul></div>
@@ -1107,8 +1706,74 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E4%BE%BF%E5%AE%9C%E5%87%BA%E4%B8%80%E5%BC%A0%E7%9C%9F%E7%9A%AE%E7%94%B5%E5%8A%A8%E6%B2%99%E5%8F%91%20West%20Harbour" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="床架/床垫" data-star="1" data-price="0">
+<article class="card s1" data-cat="床架/床垫"
+  data-star="1" data-price="260" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323l1q9pe7k705o6cmc9gbnqgmmpkau0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323l1q9pe7k7g5o6cmc9gbnqg88bn3to?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>Double 床 + 床垫（送床垫保护罩）</h3>
+    <div class="price">$260</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>功能完好，白色漆面有几处褪色</dd></div>
+      <div><dt>区域</dt><dd>中区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · lll</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>送床垫保护罩，新买要 $40 左右</li><li>卖家主动写出漆面褪色，不藏瑕疵，这类卖家一般描述可信</li><li>中区自提，同一卖家的实木餐桌可以一趟拿完</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>$260 的 Double 套装，比同一天 $250 的 Queen 套装还贵，尺寸却更小 —— 单看价格不划算</li><li>白色漆面有几处褪色，介意外观的先看细节图</li><li>是小孩睡过的床，床垫卫生要自己判断</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>开 $200；对方不松就直接去看錢錢唐唐那套 $250 的 Queen</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20Double%20Bed%20%E4%B8%AD%E5%8C%BA%E8%87%AA%E5%8F%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="床架/床垫"
+  data-star="1" data-price="500" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323lalshd0a0049gmsj51lgno98cqr9o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323lalshd0a0g49gmsj51lgnopjni6jo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>Queen 实木床 + 床垫（整套 $500）</h3>
+    <div class="price">$500</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>实木，卖家称「一辈子用不坏」</dd></div>
+      <div><dt>区域</dt><dd>未写</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 🍑</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>实木结构，从图上看用料确实厚，比板式床耐用</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>同一天錢錢唐唐的 Queen 实木床 + 床垫 + 床头柜只要 $250，这套贵了一倍</li><li>没写在哪个区，也没写尺寸和用了几年</li><li>「一辈子用不坏」是卖家自述，没有任何客观信息支撑</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>除非看图后成色明显更好，否则按 $300 开口；谈不下来就去看 $250 那套</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BAQueen%E5%BA%8A%E5%92%8C%E5%BA%8A%E5%9E%AB%20%E8%B6%85%E7%BA%A7%E7%BB%93%E5%AE%9E%E5%AE%9E%E6%9C%A8%E5%BA%8A" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="床架/床垫"
+  data-star="1" data-price="50" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kuhga97k005n0u2ma1megfpqfi4vo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323kuhga97k0g5n0u2ma1megfbrgt918?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛏️ 床架/床垫</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>Double 床垫 + 床架（$50，已 on hold）</h3>
+    <div class="price">$50</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未写</dd></div>
+      <div><dt>区域</dt><dd>北岸 Albany</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 月亮bb</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$50 一套 Double 床垫 + 床架，是本表最低价</li><li>Albany 自提，可以和同区的花架一起跑一趟</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>标题已写 on hold，被人预订了，大概率轮不到 —— 别抱太大期望</li><li>没写成色、年限、品牌，$50 这个价位通常有明显使用痕迹</li><li>只能自提，Double 床垫要大车</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>先别出价，留一句「如果对方放弃了麻烦通知我」—— 预订黄掉很常见（同期就有一条免费床垫因为预订方反悔重新放出）</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=Albany%E6%90%AC%E5%AE%B6%E5%87%BA%E9%97%B2%E7%BD%AE%E5%BA%8A%E5%9E%AB%2B%E5%BA%8A" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="床架/床垫"
+  data-star="1" data-price="0" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323jrcbcv2g005oammb20juffqbs64m8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span>
@@ -1119,7 +1784,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>北岸 Long Bay</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · 有你有我一肚子气</dd></div>
+      <div><dt>发布</dt><dd>08/08 · 有你有我一肚子气</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>08-08 新帖，竞争少</li></ul></div>
@@ -1129,8 +1794,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8%E5%87%BA%E5%BA%8A%E6%9E%B6%20long%20bay" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="床架/床垫" data-star="1" data-price="100">
+<article class="card s1" data-cat="床架/床垫"
+  data-star="1" data-price="100" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323h3odk07e005qi4qmfjne01hplvu30?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span>
@@ -1141,7 +1806,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>中区 Hillsborough</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月06日 · 小红薯6A465740</dd></div>
+      <div><dt>发布</dt><dd>08/06 · 小红薯6A465740</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>单人床 / 儿童房够用</li></ul></div>
@@ -1151,8 +1816,30 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E6%90%AC%E5%AE%B6%E5%87%BA%E5%8D%95%E4%BA%BA%E5%BA%8A%E6%9E%B6" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="洗衣机/冰箱" data-star="1" data-price="599">
+<article class="card s1" data-cat="洗衣机/冰箱"
+  data-star="1" data-price="350" data-region="其他">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323lr95cngo005q2ikfsmr39g5j7dolg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323lr95cngo0g5q2ikfsmr39g2lpn4d0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span><span class="tag new">✨ 今日新增</span><span class="tag">🚚 可送货</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>小冰箱（可送货）</h3>
+    <div class="price">$350</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>自用维护良好、很干净；因换大冰箱才出</dd></div>
+      <div><dt>区域</dt><dd>未写</dd></div>
+      <div><dt>取货</dt><dd>🚚 可送货</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 哦.</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>愿意送货 —— 冰箱是最难自己搬的一件，省下租车和叫人的钱</li><li>是换大冰箱才出的，不是坏了才卖，机器状态相对可信</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>$350 买一台「小冰箱」偏贵：同一天中区那台不到 4 年的整机才 $450</li><li>品牌、容量、年份一个参数都没写</li><li>没说在哪个区，送货范围和运费也没提</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>先问容量、品牌、年份；200L 以下的开 $200，问不出参数就别去</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%E5%86%B0%E7%AE%B1%20%E6%8D%A2%E5%A4%A7%E5%86%B0%E7%AE%B1%20%E5%8F%AF%E9%80%81%E8%B4%A7" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="洗衣机/冰箱"
+  data-star="1" data-price="599" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0323jueieo2a104a5le42rei6l8quntno?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
@@ -1163,7 +1850,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>近新，制冷完好无异味</dd></div>
       <div><dt>区域</dt><dd>北岸 Pinehill</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · L.</dd></div>
+      <div><dt>发布</dt><dd>08/08 · L.</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>近新，隔板抽屉齐全，空间大</li></ul></div>
@@ -1173,30 +1860,8 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%BA%8C%E6%89%8B%20%E8%BF%91%E6%96%B0%E7%BE%8E%E7%9A%84%E5%8F%8C%E5%BC%80%E9%97%A8%E5%86%B0%E7%AE%B1" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="洗衣机/冰箱" data-star="1" data-price="100">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323e4fcu77c0g49p7knnlnnihl7hrs2o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
-  <div class="body">
-    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
-      <span class="stars" title="观望">★☆☆</span></div>
-    <h3>8kg 洗衣机（把手松动）</h3>
-    <div class="price">$100</div>
-    <dl class="meta">
-      <div><dt>成色</dt><dd>橡胶圈脏需清洁，把手松动开门要用力</dd></div>
-      <div><dt>区域</dt><dd>奥克兰中区</dd></div>
-      <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月03日 · 糯米丁</dd></div>
-    </dl>
-    <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>$100 是全表最便宜的正常尺寸洗衣机</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>门把手松动是故障前兆，可能很快要修</li><li>橡胶圈脏容易发霉，要自己深度清洁</li></ul></div>
-    </div>
-    <div class="offer"><b>出价建议</b>$80；且要现场跑完一个快洗程序看排水和脱水</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%208kg%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E6%8A%8A%E6%89%8B%E6%9D%BE%E5%8A%A8" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
-  </div>
-</article>
-
-<article class="card s1" data-cat="洗衣机/冰箱" data-star="1" data-price="30">
+<article class="card s1" data-cat="洗衣机/冰箱"
+  data-star="1" data-price="30" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_uhdr/1040g3qg323fgl1bc0a00400soq66ri2i02b9qn8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
@@ -1207,7 +1872,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>全新闲置</dd></div>
       <div><dt>区域</dt><dd>City / 北岸</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月05日 · 小米周-新西兰</dd></div>
+      <div><dt>发布</dt><dd>08/05 · 小米周-新西兰</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>$30，洗内衣内裤袜子等小件很方便</li><li>洗衣甩干二合一，可折叠不占地</li></ul></div>
@@ -1217,30 +1882,30 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%8C%97%E5%B2%B8%20%E5%85%A8%E6%96%B0%E9%97%B2%E7%BD%AE%E4%BE%BF%E6%90%BA%E5%BC%8F%E5%8F%AF%E6%8A%98%E5%8F%A0%E6%B4%97%E8%A1%A3%E6%9C%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="餐桌椅" data-star="1" data-price="0">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323bj1sqfn27g4a1jikbvru11jrija9o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s1" data-cat="洗衣机/冰箱"
+  data-star="1" data-price="100" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323e4fcu77c0g49p7knnlnnihl7hrs2o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
+    <div class="toprow"><span class="cat">🧺 洗衣机/冰箱</span>
       <span class="stars" title="观望">★☆☆</span></div>
-    <h3>1 米圆桌（木头有质感）</h3>
-    <div class="price">面议</div>
+    <h3>8kg 洗衣机（把手松动）</h3>
+    <div class="price">$100</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>因换更大桌子闲置</dd></div>
-      <div><dt>区域</dt><dd>西区 Westgate</dd></div>
+      <div><dt>成色</dt><dd>橡胶圈脏需清洁，把手松动开门要用力</dd></div>
+      <div><dt>区域</dt><dd>奥克兰中区</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月01日 · 潔美Jamie</dd></div>
+      <div><dt>发布</dt><dd>08/03 · 糯米丁</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>圆桌省空间，小户型友好</li><li>是升级换代出的，不是坏了才出</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价；1 米只能坐 4 人，略挤</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>$100 是全表最便宜的正常尺寸洗衣机</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>门把手松动是故障前兆，可能很快要修</li><li>橡胶圈脏容易发霉，要自己深度清洁</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>问价，$60-100 合理</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%E5%87%BA%E6%A1%8C%E5%AD%90%E9%A4%90%E6%A1%8C%20%E4%B8%80%E5%BC%A01%E7%B1%B3%E5%9C%86%E6%A1%8C" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>$80；且要现场跑完一个快洗程序看排水和脱水</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%208kg%E6%B4%97%E8%A1%A3%E6%9C%BA%20%E6%8A%8A%E6%89%8B%E6%9D%BE%E5%8A%A8" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="餐桌椅" data-star="1" data-price="45">
+<article class="card s1" data-cat="餐桌椅"
+  data-star="1" data-price="45" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323cq2elgne405qf3vjcpnfvqngpoek8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
@@ -1251,7 +1916,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>未注明</dd></div>
       <div><dt>区域</dt><dd>奥克兰中区</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月02日 · 奥克兰出闲置</dd></div>
+      <div><dt>发布</dt><dd>08/02 · 奥克兰出闲置</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>卖家强调坐起来特别舒服</li></ul></div>
@@ -1261,8 +1926,30 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20%E6%A4%85%E5%AD%90%EF%BC%8C%E5%9D%90%E8%B5%B7%E6%9D%A5%E7%89%B9%E5%88%AB%E8%88%92%E6%9C%8D%EF%BC%8C%E7%89%B9%E4%BB%B7%E5%87%BA45" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s1" data-cat="办公桌/工学椅" data-star="1" data-price="169">
+<article class="card s1" data-cat="餐桌椅"
+  data-star="1" data-price="0" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323bj1sqfn27g4a1jikbvru11jrija9o?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>1 米圆桌（木头有质感）</h3>
+    <div class="price">面议</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>因换更大桌子闲置</dd></div>
+      <div><dt>区域</dt><dd>西区 Westgate</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/01 · 潔美Jamie</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>圆桌省空间，小户型友好</li><li>是升级换代出的，不是坏了才出</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价；1 米只能坐 4 人，略挤</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问价，$60-100 合理</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%E5%87%BA%E6%A1%8C%E5%AD%90%E9%A4%90%E6%A1%8C%20%E4%B8%80%E5%BC%A01%E7%B1%B3%E5%9C%86%E6%A1%8C" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s1" data-cat="办公桌/工学椅"
+  data-star="1" data-price="169" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323k078t0ic305n2l082m6i5bqmk1qm0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">💻 办公桌/工学椅</span>
@@ -1273,7 +1960,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>自用很爱惜</dd></div>
       <div><dt>区域</dt><dd>北岸 Pinehill</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · Eric</dd></div>
+      <div><dt>发布</dt><dd>08/08 · Eric</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>能 180° 环绕折叠，转角位也能用，小房间友好</li><li>送书架或晾衣架，卖家说「爽快全送」</li><li>同卖家还在出 Bosch 洗衣机，可以一起谈</li></ul></div>
@@ -1283,30 +1970,52 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%BA%8C%E6%89%8B%20%E4%B9%B0%E5%8F%98%E5%BD%A2%E9%95%BF%E4%B9%A6%E6%A1%8C%20%E9%80%81%E4%B9%A6%E6%9E%B6%20%E6%99%BE%E8%A1%A3%E6%9E%B6" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s0" data-cat="沙发" data-star="0" data-price="385">
-  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323gq8vqv76005nivffsg80brblg2uto?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+<article class="card s1" data-cat="客厅收纳"
+  data-star="1" data-price="0" data-region="中区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323l840fa70c049vds8j21lirqftdg5g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/1040g2sg323l840fa709049vds8j21lir17elv10?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
-    <div class="toprow"><span class="cat">🛋️ 沙发</span>
-      <span class="stars" title="建议跳过">☆☆☆</span></div>
-    <h3>沙发（有晒褪色）</h3>
-    <div class="price">$385</div>
+    <div class="toprow"><span class="cat">📺 客厅收纳</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>收纳柜 40×60×30</h3>
+    <div class="price">面议</div>
     <dl class="meta">
-      <div><dt>成色</dt><dd>有些晒褪色，无破损无剐蹭</dd></div>
-      <div><dt>区域</dt><dd>东区 Flatbush</dd></div>
+      <div><dt>成色</dt><dd>未写</dd></div>
+      <div><dt>区域</dt><dd>中区 CBD</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月06日 · MoMo</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 大牙牙</dd></div>
     </dl>
     <div class="pc">
-      <div class="pro"><h4>优势</h4><ul><li>卖家写明好打理易清洁，无破损</li></ul></div>
-      <div class="con"><h4>劣势 / 风险</h4><ul><li>$385 明显偏高 —— 同一张表里 $60~$150 就能买到近新的</li><li>已经晒褪色，颜值打折</li></ul></div>
+      <div class="pro"><h4>优势</h4><ul><li>CBD 自提，卖家特地写了「门口好停车」—— 市区取货最麻烦的就是停车</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没标价、没写成色、没写材质，基本只有一组尺寸</li><li>40×60×30 是很小的柜子，放不了多少东西</li></ul></div>
     </div>
-    <div class="offer"><b>出价建议</b>$200 以内才考虑，否则跳过</div>
-    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%90%AC%E5%AE%B6%E5%87%BA%E6%B2%99%E5%8F%91%20%E6%9C%89%E4%BA%9B%E6%99%92%E8%A4%AA%E8%89%B2%20Flatbush" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+    <div class="offer"><b>出价建议</b>这个体积的二手收纳柜行情 $20-40，开 $20</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=Akl%E5%87%BA%E9%97%B2%E7%BD%AE%E6%94%B6%E7%BA%B3%E6%9F%9C%20CBD%E8%87%AA%E6%8F%90%20%E9%97%A8%E5%8F%A3%E5%A5%BD%E5%81%9C%E8%BD%A6" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s0" data-cat="沙发" data-star="0" data-price="280">
+<article class="card s1" data-cat="客厅收纳"
+  data-star="1" data-price="15" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323lrduhugo005ot02im9i5iqnttlqq0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323lrdsfiga705ot02im9i5iqn09jsgo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">📺 客厅收纳</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="观望">★☆☆</span></div>
+    <h3>花架 plant stand（$15 / 个）</h3>
+    <div class="price">$15/个</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>无破损、无明显划痕，可正常使用</dd></div>
+      <div><dt>区域</dt><dd>北岸 Albany</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · 小红薯烤红薯</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$15 一个，比 Kmart 新的便宜；卖家明确写了无破损无划痕</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>只是花架，不解决任何刚需，优先级排在最后</li><li>没写尺寸、材质，也没说一共有几个</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>拿两个开 $25；顺路去 Albany 时再考虑，别为它专程跑一趟</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%BA%E8%8A%B1%E6%9E%B6%20plant%20stand%2015%E4%B8%AA%20Albany%E5%8F%96" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s0" data-cat="沙发"
+  data-star="0" data-price="280" data-region="中区">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8323jgshk7ni005qfjsi73en01vclg9t0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛋️ 沙发</span>
@@ -1317,7 +2026,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>近新，基本没坐过</dd></div>
       <div><dt>区域</dt><dd>中区 Three Kings</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月08日 · mokorokorona</dd></div>
+      <div><dt>发布</dt><dd>08/08 · mokorokorona</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>几乎全新，摆卧室 / 书房好看</li></ul></div>
@@ -1327,8 +2036,30 @@ footer p{margin:5px 0}
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%87%BA%E5%8D%95%E4%BA%BA%E6%B2%99%E5%8F%91%EF%BC%8C%E8%BF%91%E6%96%B0%20three%20kings" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
 </article>
-
-<article class="card s0" data-cat="床架/床垫" data-star="0" data-price="380">
+<article class="card s0" data-cat="沙发"
+  data-star="0" data-price="385" data-region="东区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323gq8vqv76005nivffsg80brblg2uto?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🛋️ 沙发</span>
+      <span class="stars" title="建议跳过">☆☆☆</span></div>
+    <h3>沙发（有晒褪色）</h3>
+    <div class="price">$385</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>有些晒褪色，无破损无剐蹭</dd></div>
+      <div><dt>区域</dt><dd>东区 Flatbush</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/06 · MoMo</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>卖家写明好打理易清洁，无破损</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>$385 明显偏高 —— 同一张表里 $60~$150 就能买到近新的</li><li>已经晒褪色，颜值打折</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$200 以内才考虑，否则跳过</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E6%90%AC%E5%AE%B6%E5%87%BA%E6%B2%99%E5%8F%91%20%E6%9C%89%E4%BA%9B%E6%99%92%E8%A4%AA%E8%89%B2%20Flatbush" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s0" data-cat="床架/床垫"
+  data-star="0" data-price="380" data-region="北岸">
   <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes_pre_post/1040g3mo323epr3iqg8005q8eg1gcl95brjs8kj0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
   <div class="body">
     <div class="toprow"><span class="cat">🛏️ 床架/床垫</span>
@@ -1339,7 +2070,7 @@ footer p{margin:5px 0}
       <div><dt>成色</dt><dd>近新</dd></div>
       <div><dt>区域</dt><dd>北岸</dd></div>
       <div><dt>取货</dt><dd>自提</dd></div>
-      <div><dt>发布</dt><dd>8月04日 · momo出闲置</dd></div>
+      <div><dt>发布</dt><dd>08/04 · momo出闲置</dd></div>
     </dl>
     <div class="pc">
       <div class="pro"><h4>优势</h4><ul><li>近新，省心</li></ul></div>
@@ -1348,71 +2079,178 @@ footer p{margin:5px 0}
     <div class="offer"><b>出价建议</b>$260 以内才考虑</div>
     <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BA%E9%97%B2%E7%BD%AE%20double%20size%20%E5%BA%8A%E6%9E%B6%20%E5%BA%8A%E5%9E%AB%20%E8%BF%91%E6%96%B0%20380" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
   </div>
+</article>
+<article class="card s0" data-cat="餐桌椅"
+  data-star="0" data-price="2500" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323l0pibo70105qjnl06ks601h9m774g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323l0pibo701g5qjnl06ks6019htjrs8?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍽️ 餐桌椅</span><span class="tag new">✨ 今日新增</span>
+      <span class="stars" title="建议跳过">☆☆☆</span></div>
+    <h3>手工定制石面餐桌 2195×950 + 6 椅</h3>
+    <div class="price">$2500</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>做工厚重，5 年前 Nelson 手工定制</dd></div>
+      <div><dt>区域</dt><dd>西区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/09 · Hipparchia</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>2195×950 的石面餐桌，尺寸和用料在二手市场几乎找不到第二张</li><li>来历清楚：Nelson 手工定制，单桌原价约 $10000，椅子 6 把原价约 $1500</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>$2500 是本表最贵的一件，比其他实木餐桌高一个数量级 —— 买的是质感，不是划算</li><li>石面桌极重，必须自己找专业搬运，费用另算，还要确认楼板和地板承重</li><li>西区自取，路远，看一趟的成本也高</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>真想要就从 $1800 起谈，并先把搬运报价问清楚 —— 石面桌搬运常见再花 $300 以上</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E4%BA%8C%E6%89%8B%20%E9%97%B2%E7%BD%AE%20%E9%A4%90%E6%A1%8C%20%E9%85%8D%E5%A5%97%E6%A4%85%E5%AD%90%20%E7%9F%B3%E5%A4%B4%E9%A4%90%E6%A1%8C" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s0" data-cat="厨房小电"
+  data-star="0" data-price="190" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k8323jgfjt4nk1g5p3b05capffogsg3aa0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r0323jgfitb7k2g5p3b05capffo41m90vg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🍳 厨房小电</span>
+      <span class="stars" title="建议跳过">☆☆☆</span></div>
+    <h3>LG 25L 微波炉（几乎全新，原价 $300）</h3>
+    <div class="price">$190 不刀</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>去年买的只用了 2 个月</dd></div>
+      <div><dt>区域</dt><dd>奥克兰西区</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>08/08 · mangocake</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>只用了 2 个月，几乎全新，JB Hi-Fi 一手</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>$190 明显偏高 —— 同一天同样是 LG 的另一台只要 $80</li><li>明确写了「不刀」，没有砍价余地</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>跳过，去看同表 $80 那台 LG</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E5%87%BALG%2025L%E5%BE%AE%E6%B3%A2%E7%82%89%20%E5%87%A0%E4%B9%8E%E5%85%A8%E6%96%B0%20190%E5%87%BA" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
 </article></div>
 </section>
 
 <section>
+  <details class="arch"><summary>往期存档 · 3 条（发布超过 14 天或已下架，留着看价格行情）</summary>
+    <div class="grid">
+<article class="card s2 dim" data-cat="保暖除湿"
+  data-star="2" data-price="50" data-region="北岸">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k83230166u17kdg49vt48dr3cad6lg039g?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/notes_pre_post/1040g3k83230166u17kd049vt48dr3cad202jaeg?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>冬季取暖器（全新未拆封）</h3>
+    <div class="price">$50</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>全新未拆封</dd></div>
+      <div><dt>区域</dt><dd>City 或北岸</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/23 · OO</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>全新未拆封 $50</li><li>City 和北岸两个点都能取，路线好安排</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>没写品牌和功率</li><li>帖子已有一段时间，先问在不在</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$40-50；问清功率再定</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E9%97%B2%E7%BD%AE%20%E5%86%AC%E5%AD%A3%E5%8F%96%E6%9A%96%E5%99%A8%2050%E5%88%80%20%E5%85%A8%E6%96%B0%E6%9C%AA%E6%8B%86%E5%B0%81" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2 dim" data-cat="保暖除湿"
+  data-star="2" data-price="0" data-region="南区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0322upol4vne005ns1c9p08o4365f76i0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/oss-sg/notes/1040g3l0322upol4vne0g5ns1c9p08o4331n4oh0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>离纽出清：暖气 / 双人电热毯 / 电饭锅 / 汤锅</h3>
+    <div class="price">面议（打包）</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>未注明</dd></div>
+      <div><dt>区域</dt><dd>南区 Papakura（Takanini 可面交）</dd></div>
+      <div><dt>取货</dt><dd>自提 / 可面交</dd></div>
+      <div><dt>发布</dt><dd>07/23 · Alex🌟</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>暖气 + 双人电热毯 + 电饭锅 + 汤锅，一单解决保暖和厨房两块</li><li>离纽出清，卖家急，打包砍价空间大</li><li>Takanini 可以面交，不用一定跑到 Papakura</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>好几样已经标注已出，剩的不多了</li><li>没标价</li><li>南区偏远</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>问剩什么 + 打包价；约在 Takanini 面交</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E7%A6%BB%E7%BA%BD%E5%87%BA%E6%B8%85%20Papakura%20%E8%87%AA%E5%8F%96%20Takanini%20%E5%8F%AF%E9%9D%A2%E4%BA%A4" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article>
+<article class="card s2 dim" data-cat="保暖除湿"
+  data-star="2" data-price="10" data-region="西区">
+  <div class="shots"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8322thblgnni2g5qh9acs3ne00ql5mgc0?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><img src="https://sns-img-qc.xhscdn.com/note_pre_post_uhdr/1040g3r8322thblgnni305qh9acs3ne00s76c7uo?imageView2/2/w/720/format/webp" loading="lazy" referrerpolicy="no-referrer" alt="" onerror="this.closest('.shots').classList.add('dead')"><div class="dead-note">图片已失效<br><span>点下方「看原帖」</span></div></div>
+  <div class="body">
+    <div class="toprow"><span class="cat">🌡️ 保暖除湿</span>
+      <span class="stars" title="值得一问">★★☆</span></div>
+    <h3>浴室电暖气（全新未拆封）</h3>
+    <div class="price">$10</div>
+    <dl class="meta">
+      <div><dt>成色</dt><dd>全新未拆封</dd></div>
+      <div><dt>区域</dt><dd>西区 Te Atatu South</dd></div>
+      <div><dt>取货</dt><dd>自提</dd></div>
+      <div><dt>发布</dt><dd>07/22 · BRYSJ</dd></div>
+    </dl>
+    <div class="pc">
+      <div class="pro"><h4>优势</h4><ul><li>$10 全新未拆封，几乎不可能更便宜</li><li>新西兰浴室没暖气是常态，冬天洗澡很难受，这个小东西体感提升很大</li></ul></div>
+      <div class="con"><h4>劣势 / 风险</h4><ul><li>只能管浴室这么大的空间，别指望暖客厅</li><li>帖子已经有一段时间，先问还在不在</li></ul></div>
+    </div>
+    <div class="offer"><b>出价建议</b>$10 直接拿，顺路就去</div>
+    <a class="go" href="https://www.xiaohongshu.com/search_result?keyword=%E5%A5%A5%E5%85%8B%E5%85%B0%E8%A5%BF%E5%8C%BA%E9%97%B2%E7%BD%AE%E6%B5%B4%E5%AE%A4%E7%94%B5%E6%9A%96%E6%B0%94%20te%20atatu%20south" target="_blank" rel="noopener">🔍 在小红书看原帖 →</a>
+  </div>
+</article></div>
+  </details>
+</section>
+
+<section>
   <h2>第一条消息怎么发</h2>
-  <p class="lede">小红书出闲置的节奏很快，第一条消息问得全不全，直接决定你要不要白跑一趟。三个模板，直接改了发。</p>
-  <div class="tpl"><h3>通用版<button class="copy">复制</button></h3><pre>你好！看到你出的〔物品名〕，我们月底搬到奥克兰，想收一个。先确认几件事：
+  <p class="lede">小红书出闲置的节奏很快，第一条消息问得全不全，直接决定你要不要白跑一趟。</p>
+  <div class="tpl"><h3>通用版<button class="copy">复制</button></h3><pre>你好！看到你出的〔物品名〕，我们刚搬到奥克兰，想收一个。先确认几件事：
 1）现在还在吗？
 2）能不能发两张最近拍的实拍图，包括有瑕疵的地方？
 3）买了多久、有没有明显磨损或异味？
 4）需不需要现场拆卸，我要不要带工具？
 5）方便的话哪天可以自提？我们有 van，可以自己搬。
 如果合适我这周就能来取。谢谢！</pre></div>
-  <div class="tpl"><h3>砍价版（对方写了瑕疵时）<button class="copy">复制</button></h3><pre>谢谢！图我看了，整体挺好的。就是〔具体瑕疵，例如：横木需要更换 / 坐垫弹簧塌了 / 显示屏不能调温〕这块我回去还得处理一下，
+  <div class="tpl"><h3>砍价版（对方写了瑕疵时）<button class="copy">复制</button></h3><pre>谢谢！图我看了，整体挺好的。就是〔具体瑕疵〕这块我回去还得处理一下，
 加上我从〔你们的位置〕过去要跑一趟，〔出价〕的话我今天就定，明天来取，你看行吗？</pre></div>
   <div class="tpl"><h3>打包版（同一卖家多件）<button class="copy">复制</button></h3><pre>你好，我看你还有〔A〕〔B〕〔C〕，我们刚搬过来正好都需要。这几件我一起要，一趟车拉走，也帮你省事。
 整单〔总价〕可以的话我今天就定下来。</pre></div>
 </section>
 
 <section>
-  <h2>砍价的四个真实抓手 · 和八个坑</h2>
+  <h2>砍价的四个抓手 · 和八个坑</h2>
   <div class="two">
     <div class="box"><h3>🔪 有效的砍价理由</h3><ul>
-      <li><b>用自提距离。</b>「我从〔北岸／中区〕过去要跑一趟，油钱加时间不少」—— 最容易被接受，尤其对方写了「仅自提」。</li>
+      <li><b>用自提距离。</b>「我从〔某区〕过去要跑一趟，油钱加时间不少」—— 最容易被接受，尤其对方写了「仅自提」。</li>
       <li><b>用需要自拆。</b>床架、大衣柜通常要现场拆。「我得带工具来拆，拆装大半天」是合理的减价理由。</li>
       <li><b>用瑕疵。</b>对方主动写了瑕疵，说明他心里已经打了折 —— 顺着这个点报价，成功率最高。</li>
-      <li><b>用打包。</b>同一卖家多件一起拿，砍价空间最大，卖家也最欢迎（他最怕零零散散卖不完）。</li>
-      <li><b>不要硬砍。</b>写明「不议价」「免屠龙刀」的，别碰这个雷。换个角度问「能不能约在市区交接」，省下的路费一样是钱。</li>
+      <li><b>用打包。</b>同一卖家多件一起拿，砍价空间最大，卖家也最欢迎。</li>
+      <li><b>不要硬砍。</b>写明「不议价」的别碰。换个角度问「能不能约在市区交接」，省下的路费一样是钱。</li>
     </ul></div>
     <div class="box"><h3>🕳️ 八个坑</h3><ul>
       <li><b>九成新 ≠ 九成新。</b>很多是战损版。一律要最近实拍，最好拍瑕疵特写。</li>
-      <li><b>最忌讳「家具50，运费150」。</b>下手前先算：物品价 + 货运费 vs 新品促销价。接近就直接放弃。</li>
-      <li><b>免费帖基本抢不到。</b>有人开货车天天守着。看到就发消息，别斟酌措辞。</li>
-      <li><b>二手床垫是最高风险品。</b>螨虫、污渍、塌陷都不可逆。除非近新且有防螨套，否则宁可买新的（NZ 促销 Queen 床垫 $300-500）。</li>
-      <li><b>提货日期要钉死。</b>打算一天搬完的话，每个卖家的时间都要提前对齐，错开会让货车费翻倍。</li>
-      <li><b>「付定金预留」要谨慎。</b>表里桃花心木餐桌那条写了「定金不退」，坚持当面看货当面付。</li>
+      <li><b>最忌讳「家具50，运费150」。</b>先算：物品价 + 货运费 vs 新品促销价。接近就放弃。</li>
+      <li><b>免费帖基本抢不到。</b>看到就发消息，别斟酌措辞。</li>
+      <li><b>二手床垫是最高风险品。</b>螨虫、污渍、塌陷都不可逆。除非近新且有防螨套，否则买新的。</li>
+      <li><b>提货日期要钉死。</b>一天搬完的话，每个卖家的时间都要提前对齐，错开会让货车费翻倍。</li>
+      <li><b>「付定金预留」要谨慎。</b>坚持当面看货当面付。</li>
       <li><b>「本人不在国内」= 代卖。</b>只看图不够，要求视频看货。</li>
-      <li><b>电器一定要通电试。</b>洗衣机至少跑一个快洗看排水和脱水；冰箱摸冷冻室、听压缩机；电动沙发试三个马达。</li>
+      <li><b>电器一定要通电试。</b>洗衣机跑一个快洗看排水脱水；冰箱摸冷冻室听压缩机；除湿机看出水。</li>
     </ul></div>
   </div>
 </section>
 
 <section>
   <h2>预算参考</h2>
-  <p class="lede">按「性价比优先」路线，全部选表里 ★★★ 那一档的估算。不含货运。</p>
+  <p class="lede">从当前在售数据实时算出来的，不是写死的。区间取该品类 ★★ 及以上、有明确标价的帖子。</p>
   <table class="budget">
-    <tr><th>项目</th><th>预算</th><th>建议来源</th></tr>
-    <tr><td>床架 + 床垫</td><td>$50 - $170</td><td>Browns Bay 实木 Queen 床架 $50（床垫建议买新的）；或 Newmarket 全套 $120</td></tr>
-    <tr><td>客厅沙发</td><td>$60 - $650</td><td>省钱：Westgate 双人 $60 或北岸 L 型 2.6m $150；一步到位：Mt Eden 整套真皮 $650</td></tr>
-    <tr><td>洗衣机</td><td>$250 - $320</td><td>东区 9 成新还在保修那台（问价），或 $280 那台 99 新</td></tr>
-    <tr><td>冰箱</td><td>$120 - $240</td><td>Pinehill 海尔 213L $120，或 Takapuna 三菱 420L $240</td></tr>
-    <tr><td>餐桌 + 6 椅</td><td>$260 - $310</td><td>Schnapper Rock 法式整套 $310，可小刀</td></tr>
-    <tr><td>办公桌 ×2</td><td>$140 - $170</td><td>Albany 单人桌 $70 + City 那家（价格在图上）</td></tr>
-    <tr><td>升降桌</td><td>$150 - $200</td><td>Albany 手动 $150；或限时那套 $200 带电视</td></tr>
-    <tr><td>工学椅</td><td>$120 - $150</td><td>北岸人体工学网椅 $150，砍到 $120-130</td></tr>
-    <tr><td>收纳 / 小件</td><td>$100 - $180</td><td>Flatbush 三件 $100 + 五抽柜 + 免费金属货架</td></tr>
-    <tr><td>全屋合计（估）</td><td>约 $1,250 - $2,190</td><td>大件建议一天集中在同一片区；外包货运一趟约 $80-150</td></tr>
+    <tr><th>品类</th><th>价格区间</th><th>当前最值得看的一条</th></tr>
+    <tr><td>🏠 一站式</td><td>$25 – $399</td><td>北岸 Albany 清仓 · 全品类明码标价 · 洗衣机$400 · 烘干机$400 · 餐桌6椅$600 · 升降桌$150 · Queen床$200（北岸 Albany）</td></tr><tr><td>🛋️ 沙发</td><td>$50 – $680</td><td>双人沙发（买了不到一年） · $60（西区 Westgate）</td></tr><tr><td>🛏️ 床架/床垫</td><td>$50 – $250</td><td>实木 Queen 床架（已拆好，可直接装车） · $50（北岸 Browns Bay）</td></tr><tr><td>🧺 洗衣机/冰箱</td><td>$120 – $1,500</td><td>海尔冰箱 213L（上冷冻下冷藏） · $120（北岸 Pinehill）</td></tr><tr><td>🍽️ 餐桌椅</td><td>$60 – $600</td><td>法式实木餐桌 + 6 张餐椅（自带灰坐垫） · 整套 $310，可小刀（北岸 Schnapper Rock）</td></tr><tr><td>💻 办公桌/工学椅</td><td>$100 – $200</td><td>人体工学网椅（带头枕、可调） · $150（北岸）</td></tr><tr><td>🌡️ 保暖除湿</td><td>$20 – $180</td><td>DeLonghi 暖气（9成新，制热快） · $40（东南区 Flat Bush）</td></tr><tr><td>🧹 清洁晾晒</td><td>$5 – $45</td><td>吸尘器 2400W Bagless（Kmart 购入） · $45（奥克兰中区）</td></tr><tr><td>🍳 厨房小电</td><td>$80 – $80</td><td>LG 微波炉（Harvey Norman 购入，很新） · $80（西区 Westgate）</td></tr><tr><td>各品类取最低价合计</td><td>约 $485</td><td>不含货运；大件建议同片区一天跑完，外包货运一趟约 $80-150</td></tr>
   </table>
 </section>
 
 <footer>
-  <p><b>数据来源</b>：小红书网页版搜索，关键词覆盖 二手床架 / 二手沙发 / 二手洗衣机 / 二手冰箱 / 二手餐桌 / 二手餐椅 / 二手办公桌 / 二手升降桌 / 二手椅子 / 二手衣柜收纳柜 / 搬家出闲置家具 / 奥克兰出闲置，全部按「最新发布」排序。抓取时间 2026-08-09。</p>
-  <p><b>筛选口径</b>：共抓取 93 条 8 月帖，剔除 38 条后保留 53 条。剔除的包括：求购/收货帖、攻略与避坑帖、DIY 与开箱帖、标注已售的、非家具类（车 / 游戏机 / 衣物 / 厨具）、坏件（一台标明「洗衣机是坏的」）、以及只有标题没有任何有效信息的帖子。</p>
+  <p><b>数据来源</b>：小红书网页版搜索，按「最新发布」排序，每日自动更新。当前收录 93 条（在售 90，往期 3）。</p>
+  <p><b>筛选口径</b>：自动剔除求购/收货帖、攻略与避坑帖、DIY 与开箱帖、标注已售的、非家具类、坏件、以及只有标题没有有效信息的帖子。</p>
   <p><b>关于链接</b>：小红书笔记直链带一次性访问令牌，复制出来会失效。所以「看原帖」是按原帖标题搜索的链接 —— 点开后对一下卡片上的卖家昵称即可。</p>
-  <p><b>提醒</b>：小红书帖子不会自动下架，标价和在售状态随时可能变。第一句先问「还在吗」。</p>
+  <p><b>提醒</b>：小红书帖子不会自动下架，标价和在售状态随时可能变。第一句先问「还在吗」。图片从小红书 CDN 实时加载，需要联网。</p>
 </footer>
 </div>
 
@@ -1434,7 +2272,9 @@ document.querySelectorAll('.bar button').forEach(b=>b.addEventListener('click',(
   all.forEach(c=>{
     let ok=true;
     if(f.startsWith('cat:'))ok=c.dataset.cat===f.slice(4);
+    else if(f.startsWith('reg:'))ok=c.dataset.region===f.slice(4);
     else if(f.startsWith('star:'))ok=c.dataset.star===f.slice(5);
+    else if(f==='new')ok=!!c.querySelector('.tag.new');
     else if(f==='free')ok=/免费|送货|可送/.test(c.textContent);
     c.style.display=ok?'':'none';
   });upd();
